@@ -9,7 +9,7 @@
         ]
     },
     {
-        "hasLink": "https://biz.kebhana.com/index.jsp",
+        "linkUrl": "https://biz.kebhana.com/index.jsp",
         "imageSrc": "work/pj25.jpg",
         "altText": "하나은행 썸네일",
         "title": "하나은행 기업뱅킹 운영",
@@ -20,7 +20,7 @@
         ]
     },
     {
-        "hasLink": "https://temha.io/",
+        "linkUrl": "https://temha.io/",
         "imageSrc": "work/pj24.jpg",
         "altText": "템플릿하우스 썸네일",
         "title": "템플릿하우스 솔루션 UI개선",
@@ -30,7 +30,7 @@
         ]
     },
         {
-        "hasLink": "https://www.hfashionmall.com/main",
+        "linkUrl": "https://www.hfashionmall.com/main",
         "imageSrc": "work/pj23.jpg",
         "altText": "H쇼핑몰 썸네일",
         "title": "한섬 H쇼핑몰 브랜드관 리뉴얼 퍼블리싱",
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "hasLink": "https://www.lottecard.co.kr/",
+        "linkUrl": "https://www.lottecard.co.kr/",
         "imageSrc": "work/pj22.jpg",
         "altText": "롯데카드 썸네일",
         "title": "롯데카드 퍼블리싱 운영",
@@ -69,7 +69,7 @@
         ]
     },
     {
-        "hasLink": "http://www.elumisoft.com/",
+        "linkUrl": "http://www.elumisoft.com/",
         "imageSrc": "work/pj18.jpg",
         "altText": "이루미소프트 썸네일",
         "title": "이루미소프트 구축",
@@ -88,7 +88,7 @@
         ]
     },
     {
-        "hasLink": "http://www.redshoes.or.kr/",
+        "linkUrl": "http://www.redshoes.or.kr/",
         "imageSrc": "work/pj15.jpg",
         "altText": "빨간운동화 썸네일",
         "title": "빨간운동화 구축",
@@ -98,7 +98,7 @@
         ]
     },
     {
-        "hasLink": "http://www.dreamchef.kr/",
+        "linkUrl": "http://www.dreamchef.kr/",
         "imageSrc": "work/pj14.jpg",
         "altText": "드림셰프 썸네일",
         "title": "드림셰프 구축",
@@ -108,7 +108,7 @@
         ]
     },
     {
-        "hasLink": "http://www.copya.com/",
+        "linkUrl": "http://www.copya.com/",
         "imageSrc": "work/pj13.jpg",
         "altText": "카피아 썸네일",
         "title": "카피아 구축",
@@ -118,7 +118,7 @@
         ]
     },
     {
-        "hasLink": "http://www.iwomanlawyer.co.kr/",
+        "linkUrl": "http://www.iwomanlawyer.co.kr/",
         "imageSrc": "work/pj12.jpg",
         "altText": "이성숙법률사무소 썸네일",
         "title": "이성숙법률사무소 구축",
@@ -128,7 +128,7 @@
         ]
     },
     {
-        "hasLink": "https://sapyoung.com/",
+        "linkUrl": "https://sapyoung.com/",
         "imageSrc": "work/pj11.jpg",
         "altText": "사회평론 썸네일",
         "title": "사회평론 구축",
@@ -138,7 +138,7 @@
         ]
     },
     {
-        "hasLink": "https://hallims.co.kr/",
+        "linkUrl": "https://hallims.co.kr/",
         "imageSrc": "work/pj08.jpg",
         "altText": "한림기계 썸네일",
         "title": "한림기계 구축",
@@ -157,7 +157,7 @@
         ]
     },
     {
-        "hasLink": "https://inv.hanseo.ac.kr/",
+        "linkUrl": "https://inv.hanseo.ac.kr/",
         "imageSrc": "work/pj05.jpg",
         "altText": "한서대학교 썸네일",
         "title": "한서대학교 구축",
@@ -167,7 +167,7 @@
         ]
     },
     {
-        "hasLink": "https://www.hlbelec.com/",
+        "linkUrl": "https://www.hlbelec.com/",
         "imageSrc": "work/pj04.jpg",
         "altText": "에이치엘비일렉 썸네일",
         "title": "에이치엘비일렉 구축",
@@ -177,7 +177,7 @@
         ]
     },
     {
-        "hasLink": "http://www.gagu824.com/",
+        "linkUrl": "http://www.gagu824.com/",
         "imageSrc": "work/pj02.jpg",
         "altText": "디자인스페이스 썸네일",
         "title": "디자인스페이스 쇼핑몰 구축",
@@ -187,7 +187,7 @@
         ]
     },
     {
-        "hasLink": "http://eroemoto.com/",
+        "linkUrl": "http://eroemoto.com/",
         "imageSrc": "work/pj01.jpg",
         "altText": "엘로이모토 썸네일",
         "title": "엘로이모토 구축",

@@ -17,8 +17,34 @@
     background-color: $co-white;
     box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.04);
     border: 1px solid transparent;
-    &:hover {
-        border-color: $primary;
+    transition: all 0.3s;
+    @include mediaPc {
+        &:hover {
+            box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.12);
+            transform:translateY(-10px);
+        }
+    }
+    &.is-link {
+        .card-img {
+            position: relative;
+            @include after {
+                position: absolute;
+                right: rem(8);
+                bottom: rem(8);
+                width: rem(34);
+                height: rem(34);
+                @include bg("icon-link.png", center center);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                @include media {
+                    top: rem(4);
+                    right: rem(4);
+                    bottom: auto;
+                    width: rem(20);
+                    height: rem(20);
+                }
+            }
+        }
     }
     @include media {
         display: grid;
