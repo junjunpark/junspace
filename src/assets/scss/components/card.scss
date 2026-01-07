@@ -37,8 +37,9 @@
                 background-repeat: no-repeat;
                 background-size: 100%;
                 @include media {
+                    top: rem(4);
                     right: rem(4);
-                    bottom: rem(4);
+                    bottom: auto;
                     width: rem(20);
                     height: rem(20);
                 }
