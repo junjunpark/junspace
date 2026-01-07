@@ -335,9 +335,37 @@ p, .text, .body1 {
   background-color: #FFF;
   box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.04);
   border: 1px solid transparent;
+  transition: all 0.3s;
 }
-.card-box:hover {
-  border-color: #21CDA4;
+@media only screen and (min-width: 768px) {
+  .card-box:hover {
+    box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.12);
+    transform: translateY(-10px);
+  }
+}
+.card-box.is-link .card-img {
+  position: relative;
+}
+.card-box.is-link .card-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0.5714285714rem;
+  bottom: 0.5714285714rem;
+  width: 2.4285714286rem;
+  height: 2.4285714286rem;
+  background: url("../../assets/images/icon-link.png") center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .card-box.is-link .card-img::after {
+    top: 0.2857142857rem;
+    right: 0.2857142857rem;
+    bottom: auto;
+    width: 1.4285714286rem;
+    height: 1.4285714286rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   .card-box {
