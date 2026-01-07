@@ -1,0 +1,162 @@
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+/* base */
+:root {
+    --content-inner: 1200px;
+    --side-padding: 24px;
+    --base-size: 14px;
+    --base-bg: #{$co-white};
+    --base-color: #{$text-color};
+    @include media {
+        --content-width: 100%;
+        --side-padding: 16px;
+        --base-size: 12px;
+    }
+}
+
+/* common */
+* , ::before, ::after{
+    box-sizing: inherit;
+}
+html {
+    height: 100%;
+}
+
+html,body {
+    font-family: "Noto Sans KR", 'Malgun Gothic', 'Dotum', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.05em;
+    line-height: 1.2;
+    font-size: var(--base-size);
+    background-color: var(--base-bg);
+    color: var(--base-color);
+}
+em {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+img {
+    max-width:100%;
+    vertical-align: top;
+}
+
+/* accessibility */
+#skip {
+    position: fixed;
+    z-index: 999999;
+    a {
+        font-size: 16px;
+        position: absolute;
+        top: -100px;
+        left: 0;
+        display: flex;
+        width: 100vw;
+        padding: 5px 0;
+        opacity: 0;
+        color: #fff;
+        background-color: #000;
+        justify-content: center;
+        &:focus {
+            top: 0;
+            opacity: 1;
+        }
+    }
+}
+
+/* typography  */
+h1, .h1 {
+  @include typo('h1');
+}
+
+h2, .h2 {
+  @include typo('h2');
+}
+
+h3, .h3 {
+  @include typo('h3');
+}
+
+p, .text, .body1 {
+  @include typo('body1');
+}
+
+.stext, .body2 {
+  @include typo('body2');
+}
+
+.body3 {
+    @include typo('body3');
+}
+
+/* alignment */
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.flex-direction {
+    flex-direction: column;
+}
+.grid {
+    @include grid(repeat(2,1fr), null, rem(24));
+}
+
+
+/* state */
+.scroll-lock {
+    overflow:hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.dimmed {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    @include bgblack(0.6);
+    z-index: 1;
+}
+
+.sr-only {
+    @include sr-only;
+}
+
+.blur {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+}
+
+.list-dot {
+    li {
+        padding-left: 8px;
+        position: relative;
+        @include typo('body1');
+        @include before {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: $tab-color;
+            margin-top: 6px;
+            position: absolute;
+            left: 0;
+        }
+        &:not(:first-child){
+            margin-top: 8px;
+        }
+    }
+}

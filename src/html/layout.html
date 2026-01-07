@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>layout</title>
+    <%- include("./includes/head.ejs") %>
+    <style>
+    .section-inner {
+        border: 2px solid red;
+    }
+    </style>
+</head>
+<body>
+    <div id="skip" class="skip">
+        <a href="#header">헤더바로가기</a>
+        <a href="#container">본문바로가기</a>
+    </div>
+    <div class="wrapper">
+        <%- include("./includes/header.ejs") %>
+        <main id="container" class="container">
+            <section class="section sec01" style="background-color: rgb(226, 156, 204);">
+                <div class="section-inner">이너영역</div>
+            </section>
+            <section class="section sec02" style="background-color: rgb(178, 153, 202);">
+                <div class="section-inner">이너영역<br>이너영역</div>
+            </section>
+            <section class="section sec03" style="background-color: rgb(153, 183, 202);">
+                <div class="section-inner">이너영역<br>이너영역<br>이너영역</div>
+            </section>
+            <section class="section sec04" style="background-color: rgb(160, 202, 153);">
+                <div class="section-inner">이너영역</div>
+            </section>
+        </main>
+        <%- include("./includes/footer.ejs") %>
+    </div>
+    <!-- js -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

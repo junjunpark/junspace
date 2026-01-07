@@ -1,0 +1,17 @@
+<section class="section sec03" >
+    <div class="section-inner">
+        <h2 class="h2">WORK</h2>
+        <div class="tab-wrap sr-only">
+            <div class="tab-btn-list">
+                <a href="javascript:void(0)" class="tab-btn" data-filter="*">전체</a>
+                <a href="javascript:void(0)" class="tab-btn" data-filter="cate1">반응형</a>
+                <a href="javascript:void(0)" class="tab-btn" data-filter="cate2">웹·모바일</a>
+            </div>
+        </div>
+        <!-- project list -->
+        <%- include("../component/card.ejs",{ cardBox: cardBox || [] }) %>
+        <!-- // project list -->
+    </div>
+</section>
+
+

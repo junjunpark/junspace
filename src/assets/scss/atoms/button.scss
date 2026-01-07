@@ -1,0 +1,78 @@
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.btn {
+    --btn-pd: 6px;
+    --btn-lh: 1.5;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--btn-color, $co-white);
+    background-color: var(--btn-bgc, $primary);
+    border: 1px solid var(--btn-bdc, $primary);
+    border-radius: calc(var(--btn-pd) + 1rem * var(--btn-lh) / 2);
+    padding: var(--btn-pd) 16px;
+    font-size: rem(14);
+    font-weight: 500;
+    transition: all 0.3s;
+    line-height: var(--btn-lh);
+    cursor: pointer;
+
+     &.disabled, &:disabled {
+        cursor: inherit;
+        --btn-color: #{$text-color};
+        --btn-bdc: #{$text-weak};
+        --btn-bgc: #{$text-weak};
+    }
+
+    // type
+    &.primary {
+        &:not(.disabled):not(:disabled):hover {
+            color: var(--btn-hover-color, $primary);
+            background-color: var(--btn-hover-bgc, $co-white);
+        }
+    }
+    &.line {
+        --btn-bgc: transparent;
+        --btn-color: #{$primary};
+        &:not(.disabled):not(:disabled):hover {
+            background-color: var(--btn-hover-bgc, $co-white);
+        }
+    }
+    &.gray {
+        --btn-color: #{$tab-color};
+        --btn-bgc: #{$tab-bg};
+        --btn-bdc: #{$tab-bg};
+    }
+
+    // size
+    &.sm {
+        --btn-pd: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
+        @include typo('body2');
+        --font-color: #{$co-white};
+        &.gray {
+            --font-color: #{$tab-color};
+        }
+        &.disabled, &:disabled {
+            --font-color: #{$text-color};
+        }
+    }
+    &.lg {
+        --btn-pd: 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.btn-wrap {
+    @include flex(center, flex-start);
+    flex-wrap: wrap;
+    margin-top: -8px;
+    margin-left: -8px;
+    .btn {
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+}

@@ -1,0 +1,46 @@
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(24);
+    @include media {
+        grid-template-columns: 1fr;
+        gap: rem(12);
+    }
+}
+
+.card-box {
+    padding: rem(24);
+    border-radius: 12px;
+    background-color: $co-white;
+    box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.04);
+    border: 1px solid transparent;
+    &:hover {
+        border-color: $primary;
+    }
+    @include media {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 12px;
+        align-items: center;
+    }
+    .card-desc {
+        @include mediaPc {
+            margin-top: rem(24);
+        }
+        .bod2 {
+            display: inline-block;
+        }
+        .info {
+            margin-top: rem(4);
+            .list-dot {
+                margin-top: rem(12);
+                padding-top: rem(8);
+                border-top: 1px dotted rgba($co-black, 0.1);
+            }
+        }
+    }
+}
+

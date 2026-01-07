@@ -1,0 +1,26 @@
+<div class="card-list">
+    <% for (let i = 0; i < cardBox.length; i++) { %>
+    <!-- card -->
+    <div class="card-box">
+        <div class="card-img">
+            <%- include('../atoms/image.ejs', {
+                    hasLink: cardBox[i].hasLink,
+                    imageSrc: cardBox[i].imageSrc,
+                    altText: cardBox[i].altText
+                }) %>
+        </div>
+        <div class="card-desc">
+            <h4 class="h3"><%- cardBox[i].title %></h4>
+            <div class="info">
+                <span class="body2"><%- cardBox[i].period %></span>
+                <ul class="list-dot">
+                    <% for (let j = 0; j < cardBox[i].descriptions.length; j++) { %>
+                    <li><%- cardBox[i].descriptions[j] %></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // card -->
+    <% } %>
+</div>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>JUN Portfolio</title>
+<%- include("./includes/head.ejs") %>
+</head>
+<body>
+    <div id="skip" class="skip">
+        <a href="#header">헤더바로가기</a>
+        <a href="#container">본문바로가기</a>
+    </div>
+    <div class="wrapper">
+        <%- include("./includes/header.ejs") %>
+        <%- include("./includes/layout.ejs", { cardBox: cardBox || [] }) %>
+        <%- include("./includes/footer.ejs") %>
+    </div>
+
+    <!-- toast -->
+    <div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- js -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

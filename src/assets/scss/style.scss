@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* base */
+@use "base/reset.scss";
+@use "base/fonts.scss";
+@use "base/variables.scss";
+@use "base/mixin.scss";
+@use "base/common.scss";
+
+/* components */
+@use "atoms/button";
+
+/* components */
+@use "components/card";
+
+/* layout */
+@use "layout/layout";
+@use "layout/detail";
+
+
+

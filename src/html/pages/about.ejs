@@ -1,0 +1,50 @@
+<section class="section sec02">
+    <div class="section-inner">
+        <h2 class="h2">ABOUT ME</h2>
+        <div class="grid profile">
+            <div class="profile-img">
+                <%- include('../atoms/image.ejs', { imageSrc: 'profile.png', altText: 'profile image' }) %>
+            </div>
+            <div class="profile-box">
+                <h3 class="profile-title">
+                    안녕하세요!😀<br>
+                    <em>차분함</em>과 <em>꾸준함</em>을 바탕으로<br>
+                    <em>구조를 이해하고 탐구</em>하는<br>
+                    웹 퍼블리셔 <strong>박혜준</strong>입니다.
+                </h3>
+                <div class="btn-wrap">
+                    <%- include('../atoms/button.ejs', {
+                        tag: 'a',
+                        href: 'https://m.site.naver.com/1XPa9',
+                        text: 'Notion 바로가기',
+                        className: 'primary lg'
+                    }) %>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="about-box">
+                <h3 class="h3">SKILL & TOOL</h3>
+                <ul class="list-dot">
+                    <li>HTML5 시맨틱 마크업 및 JavaScript 라이브러리 활용</li>
+                    <li>CSS·SCSS 활용, 반응형·적응형 퍼블리싱</li>
+                    <li>브라우저 호환성 이슈 및 웹 접근성 대응 경험</li>
+                    <li>UI 컴포넌트 제작 및 구조화 작업 가능</li>
+                    <li>솔루션 환경에서의 UI 커스터마이징 경험</li>
+                    <li>Git, SVN 버전 관리 환경에서 작업</li>
+                    <li>Figma, Zeplin, Adobe XD 디자인 시안 확인 및 협업</li>
+                </ul>
+            </div>
+            <div class="about-box">
+                <h3 class="h3">Certifications</h3>
+                <ul class="list-dot">
+                    <li>컴퓨터활용능력 2급 (2024.02)</li>
+                    <li>GTQ 일러스트 1급 (2018.03)</li>
+                    <li>GTQ 1급 (2018.02)</li>
+                    <li>컴퓨터그래픽스 운용기능사 (2008.06)</li>
+                    <li>웹디자인 기능사 (2007.06)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,137 @@
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+/* combinator */
+.h1 + p,
+.h2 + p {
+    margin-top: 20px;
+}
+.h3 + p {
+    margin-top: 10px;
+}
+
+/* mv */
+.sec01 {
+    width: 100%;
+    height: 40%;
+    @include bg("mv.jpg", left 38%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .mv-area {
+        margin-left: auto;
+        .h1 {
+            --font-color: #{$co-white};
+            opacity: 0;
+            transform: translateY(100px);
+            animation: maintitle 0.5s linear 0.5s both;
+        }
+        .body1 {
+            --font-color: #{$co-white};
+            opacity: 0;
+            transform: translateY(100px);
+            animation: maintitle 0.5s linear 0.8s both;
+        }
+    }
+}
+
+@keyframes maintitle {
+    from {
+        -webkit-transform: translate(100px);
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* about me */
+.sec02 {
+    .profile {
+        margin-bottom: rem(24);
+    }
+    .profile-img {
+        @include flex(center, center);
+        img {
+            max-width: rem(240);
+            @include media {
+                max-width: rem(180);
+            }
+        }
+    }
+    .profile-box {
+        .profile-title {
+            font-size: rem(24);
+            font-weight: 400;
+            color: $co-black;
+            line-height: 1.5;
+            em, strong {
+                font-weight: 600;
+            }
+        }
+        .btn-wrap {
+            padding-top: rem(24);
+        }
+    }
+    .about-box {
+        .h3 + .list-dot {
+            margin-top: rem(16);
+        }
+    }
+}
+
+/* works */
+.sec03 {
+    background-color: $bg-color;
+}
+
+/* contact */
+.sec04 {
+    background-color: $co-green;
+    position: relative;
+    @include media {
+        padding-bottom: 0;
+    }
+    @include after {
+        position: absolute;
+        inset: 0 0 0 50%;
+        @include bg("contact.jpg", center center);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include media {
+            position: relative;
+            inset: 0 0 0 0;
+            padding-top: 50%;
+            margin-top: rem(40);
+        }
+    }
+
+    .contact-area {
+        .h3 {
+            color: $co-black;
+            font-weight: 500;
+        }
+    }
+    .contact-email {
+        .btn {
+            margin-top: rem(24);
+            i {
+                font-style: normal;
+                margin-right: 4px;
+            }
+        }
+        .body3 {
+            padding-top: 8px;
+            padding-left: 8px;
+            color: $primary;
+        }
+    }
+}
+
+
+
+
+

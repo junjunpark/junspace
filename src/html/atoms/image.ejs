@@ -1,0 +1,27 @@
+<%
+    const hasLink = locals.hasLink ? locals.hasLink : null,
+        hasMobile = locals.hasMobile ? true : false,
+        mobileSrc = locals.mobileSrc ? locals.mobileSrc : null,
+        imageSrc = locals.imageSrc ? locals.imageSrc : "ho.jpg",
+        imagePath = "../assets/images/",
+        altText = locals.altText ? locals.altText : "이미지";
+%>
+
+
+
+<% if (hasLink) { %>
+    <a href="<%- hasLink %>" target="_blank">
+<% } %>
+
+<% if (mobileSrc) { %>
+    <picture>
+        <source media="(max-width: 767px)" srcset="<%- imagePath + mobileSrc %>"/>
+        <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>"/>
+    </picture>
+<% } else { %>
+    <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>"/>
+<% } %>
+
+<% if (hasLink) { %>
+    </a>
+<% } %>

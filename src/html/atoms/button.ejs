@@ -1,0 +1,38 @@
+<%
+  const tag = locals.tag ? locals.tag : 'button',
+        href = locals.href ? locals.href : '#',
+        target = locals.target ? locals.target : '_blank',
+        text = locals.text ? locals.text : '바로가기',
+        className = locals.className ? 'btn ' + locals.className : 'btn',
+        type = (locals.type === 'submit' || locals.type === 'reset') ? locals.type : 'button',
+        disabled = locals.disabled ? true : false,
+        dataAttrs = locals.dataAttrs ? locals.dataAttrs : {},
+        ariaAttrs = locals.ariaAttrs ? locals.ariaAttrs : {};
+
+  // data-* 속성을 문자열로 변환
+  let dataAttrString = '';
+  for (const [key, value] of Object.entries(dataAttrs)) {
+    dataAttrString += ` data-${key}="${value}"`;
+  }
+
+  // aria-* 속성을 문자열로 변환
+  let ariaAttrString = '';
+  for (const [key, value] of Object.entries(ariaAttrs)) {
+    ariaAttrString += ` aria-${key}="${value}"`;
+  }
+%>
+
+<% if (tag === 'a') { %>
+  <a href="<%- href %>"
+     class="<%- className %><%- disabled ? ' disabled' : '' %>"
+     target="<%- target %>"
+     <%- disabled ? ' aria-disabled="true"' : '' %><%- dataAttrString %><%- ariaAttrString %>>
+    <%- text %>
+  </a>
+<% } else { %>
+  <button type="<%- type %>"
+          class="<%- className %>"
+          <%- disabled ? ' disabled' : '' %><%- dataAttrString %><%- ariaAttrString %>>
+    <span><%- text %></span>
+  </button>
+<% } %>

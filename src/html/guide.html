@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>guide</title>
+<%- include("./includes/head.ejs") %>
+<style>
+    article {
+        padding: 100px 0;
+    }
+    .article-inner {
+        --content-inner: 800px;
+        max-width: calc(var(--content-inner) + (var(--side-padding) * 2));
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: var(--side-padding);
+        padding-left: var(--side-padding);
+    }
+    .section {
+        padding: 0;
+        margin-top: 40px;
+    }
+    .section h3, h4 {
+        margin-bottom: 12px;
+    }
+    .palette-wrap {
+        margin-top: -8px;
+        margin-left: -8px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .palette {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+    .palette > em {
+        margin-bottom: 8px;
+    }
+    .palette-box {
+        width: 60px;
+        height: 60px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(241, 241, 241)
+    }
+    .palette-box > span {
+        --font-color: #303030;
+    }
+    .contact-email .btn i {
+        font-style: normal;
+        margin-right: 4px;
+    }
+</style>
+</head>
+<body>
+
+<article>
+    <div class="article-inner">
+        <h1>Guide</h1>
+        <!-- typo -->
+        <section class="section">
+            <h3>typo</h3>
+            <h1 class="h1">제목 h1</h1>
+            <h2 class="h2">제목 h2</h2>
+            <h3 class="h3">제목 h3</h3>
+            <p class="body1">텍스트 body1</p>
+            <p class="body2">텍스트 body2</p>
+            <p class="body3">텍스트 body3</p>
+        </section>
+        <!-- color -->
+        <section class="section">
+            <h3>color</h3>
+            <div class="palette-wrap">
+                <div class="palette">
+                    <em class="body2">primary</em>
+                    <div class="palette-box" style="background-color: #21cda4;">
+                        <span class="body3" style="color:#fff">#21CDA4</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">co-point</em>
+                    <div class="palette-box" style="background-color: #0B3550;">
+                        <span class="body3" style="color:#fff">#0B3550</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">co-green</em>
+                    <div class="palette-box" style="background-color: #DEF2ED;">
+                        <span class="body3">#DEF2ED</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">co-white</em>
+                    <div class="palette-box" style="background-color: #fff;">
+                        <span class="body3">#FFFFFF</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">co-black</em>
+                    <div class="palette-box" style="background-color: #303030;">
+                        <span class="body3" style="color:#fff">#303030</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">warning</em>
+                    <div class="palette-box" style="background-color: #8f1111;">
+                        <span class="body3" style="color:#fff">#8f1111</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">caution</em>
+                    <div class="palette-box" style="background-color: #EB7E3A;">
+                        <span class="body3" style="color:#fff">#EB7E3A</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">text-color</em>
+                    <div class="palette-box" style="background-color: #777777;">
+                        <span class="body3" style="color:#fff">#777777</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">text-weak</em>
+                    <div class="palette-box" style="background-color: #999999;">
+                        <span class="body3" style="color:#fff">#999999</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">bg-color</em>
+                    <div class="palette-box" style="background-color: #f7f7f7;">
+                        <span class="body3">#F7F7F7</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">hash-bg</em>
+                    <div class="palette-box" style="background-color: #f2f2f2;">
+                        <span class="body3">#F2F2F2</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">tab-bg</em>
+                    <div class="palette-box" style="background-color: #E0E0E0;">
+                        <span class="body3">#E0E0E0</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">tab-color</em>
+                    <div class="palette-box" style="background-color: #686868;">
+                        <span class="body3" style="color:#fff">#686868</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- button -->
+        <section class="section">
+            <h3>button</h3>
+            <div class="btn-wrap">
+                <%- include('./atoms/button.ejs', {
+                    text: 'small',
+                    className: 'sm'
+                    }) %>
+                <%- include('./atoms/button.ejs', {
+                    text: 'small',
+                    className: 'gray sm'
+                    }) %>
+                <%- include('./atoms/button.ejs', {
+                    text: 'disabled',
+                    className: 'sm',
+                    disabled: true
+                    }) %>
+                <%- include('./atoms/button.ejs', {
+                    text: 'button',
+                    className: ''
+                    }) %>
+                <%- include('./atoms/button.ejs', {
+                    text: 'button gray',
+                    className: 'gray'
+                    }) %>
+                <%- include('./atoms/button.ejs', {
+                    text: 'disabled',
+                    className: '',
+                    disabled: true
+                    }) %>
+                <%- include('./atoms/button.ejs', {
+                    tag: 'a',
+                    href: '#',
+                    text: 'primary lg',
+                    className: 'primary lg'
+                    }) %>
+                <%- include('./atoms/button.ejs', {
+                    tag: 'a',
+                    href: '#',
+                    text: 'primary lg',
+                    className: 'primary gray lg'
+                    }) %>
+                <%- include('./atoms/button.ejs', {
+                    tag: 'a',
+                    href: '#',
+                    text: 'primary lg',
+                    className: 'primary lg disabled'
+                    }) %>
+
+                <!-- submit 타입 -->
+                <%- include('./atoms/button.ejs', {
+                    text: 'reset',
+                    type: 'reset',
+                    className: 'gray lg'
+                }) %>
+                <!-- submit 타입 -->
+                <%- include('./atoms/button.ejs', {
+                    text: 'submit',
+                    type: 'submit',
+                    className: 'primary lg'
+                }) %>
+            </div>
+        </section>
+        <!-- mail copy -->
+        <section class="section">
+            <h3>mail copy</h3>
+            <div class="contact-email">
+                <%- include('./atoms/button.ejs', {
+                    text: `<i aria-hidden="true">✉</i><span aria-hidden="true">deerjun817@gmail.com</span>`,
+                    className: 'line',
+                    dataAttrs: { 'email': 'deerjun817@gmail.com' },
+                    ariaAttrs: { 'label': '이메일 주소 복사' }
+                }) %>
+            </div>
+        </section>
+        <!-- list -->
+        <section class="section">
+            <h3>dot-list</h3>
+            <ul class="list-dot">
+                <li>리스트 리스트 리스트</li>
+                <li>리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트</li>
+            </ul>
+        </section>
+        <!-- image -->
+        <section class="section">
+            <h3>image</h3>
+            <div class="grid">
+                <div>
+                    <h4>링크없는 타입</h4>
+                    <%- include('./atoms/image.ejs', { imageSrc: 'work/pj10.jpg', altText: 'image' }) %>
+                </div>
+                <div>
+                    <h4>링크있는 타입</h4>
+                    <%- include('./atoms/image.ejs', { hasLink:'#', imageSrc: 'work/pj25.jpg', altText: 'image' }) %>
+                </div>
+            </div>
+        </section>
+        <!-- card -->
+        <section class="section">
+            <h3>card list</h3>
+                <%
+                // 가이드용 데이터
+                const cardBox = [
+                    {
+                        hasLink: '#',
+                        imageSrc: 'work/pj25.jpg',
+                        altText: '카드 이미지 1',
+                        title: '프로젝트 제목 1',
+                        period: '2024.01 ~ 2024.03',
+                        descriptions: ['설명 1']
+                    },
+                    {
+                        imageSrc: 'work/pj24.jpg',
+                        altText: '카드 이미지 2',
+                        title: '프로젝트 제목 2',
+                        period: '2024.04 ~ 2024.06',
+                        descriptions: ['설명 A', '설명 B']
+                    },
+                    {
+                        imageSrc: 'work/pj23.jpg',
+                        altText: '카드 이미지 3',
+                        title: '프로젝트 제목 3',
+                        period: '2024.07 ~ 2024.09',
+                        descriptions: ['설명 가', '설명 나', '설명 다', '설명 라']
+                    },
+                    {
+                        imageSrc: 'work/pj22.jpg',
+                        altText: '카드 이미지 4',
+                        title: '프로젝트 제목 4',
+                        period: '2024.10 ~ 2024.12',
+                        descriptions: ['설명']
+                    }
+                ];
+                %>
+            <%- include('./component/card.ejs', { cardBox: cardBox }) %>
+        </section>
+    </div>
+</article>
+
+    <!-- toast -->
+    <div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- js -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

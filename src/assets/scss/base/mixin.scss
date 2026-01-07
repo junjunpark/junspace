@@ -1,0 +1,192 @@
+@use '../base/variables' as *;
+
+// layout
+@mixin content-inner {
+    max-width: calc(var(--content-inner) + (var(--side-padding) * 2));
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: var(--side-padding);
+    padding-left: var(--side-padding);
+    @include media {
+        @include notch(padding, right, var(--side-padding));
+        @include notch(padding, left, var(--side-padding));
+    }
+}
+
+// Responsive
+@mixin media {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin mediaPc {
+    @media only screen and (min-width: 768px)  {
+        @content;
+    }
+}
+
+@mixin notch ($css, $direct, $value, $minus: false) {
+    @if $minus == false {
+        #{$css}-#{$direct}: $value;
+        #{$css}-#{$direct}: calc(constant(safe-area-inset-#{$direct}) + $value);
+        #{$css}-#{$direct}: calc(env(safe-area-inset-#{$direct}) + $value);
+    } @else {
+        #{$css}-#{$direct}: calc($value * -1px);
+        #{$css}-#{$direct}: calc((constant(safe-area-inset-#{$direct}) + $value) * -1);
+        #{$css}-#{$direct}: calc((env(safe-area-inset-#{$direct}) + $value) * -1);
+    }
+}
+
+@mixin notchPosition ($css, $direct, $value) {
+    #{$css}: $value;
+    #{$css}: calc(constant(safe-area-inset-#{$direct}) + $value);
+    #{$css}: calc(env(safe-area-inset-#{$direct}) + $value);
+}
+
+// rem
+$base-font-size: 14;
+
+@function rem($px, $base: $base-font-size) {
+  @return calc($px / $base) * 1rem;
+}
+
+
+// typo
+@mixin typo($type: 'body1') {
+  @if $type == 'h1' {
+    font-size: rem(40);
+    color: var(--font-color, $co-black);
+  } @else if $type == 'h2' {
+    font-size: rem(24);
+    color: var(--font-color, $co-black);
+  } @else if $type == 'h3' {
+    font-size: rem(18);
+    color: var(--font-color, $co-black);
+  } @else if $type == 'body1' {
+    font-size: rem(14);
+    color: var( --font-color, $text-color)
+  } @else if $type == 'body2' {
+    font-size: rem(12);
+    color: var( --font-color, $text-weak);
+  } @else if $type == 'body3' {
+    font-size: rem(10);
+    color: var( --font-color, $text-weak);
+  }
+}
+
+// text
+@mixin ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin ellipseMulti($num) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-break: normal;
+    word-break: break-word; // for old browser
+    overflow-wrap: break-word;
+    overflow: hidden;
+    -webkit-line-clamp: $num;
+}
+
+@mixin word-break {
+    word-wrap: break-word; // for old browser
+    word-break: normal;
+    word-break: break-word; // for old browser
+    overflow-wrap: break-word;
+}
+
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* alignment */
+@mixin flex ($vertical, $horizontal) {
+    display: flex;
+    align-items: $vertical;
+    justify-content: $horizontal;
+}
+
+@mixin grid($columns, $rows: null, $gap: null, $responsive: true) {
+  display: grid;
+  grid-template-columns: $columns;
+
+  @if $rows != null {
+    grid-template-rows: $rows;
+  }
+
+  @if $gap != null {
+    gap: $gap;
+  }
+
+  @if $responsive {
+    @include media {
+      grid-template-columns: 1fr; // mobile
+    }
+  }
+}
+
+// element
+@mixin bg($name, $position, $path: "../../assets/images/") {
+    background: url("#{$path}#{$name}") $position;
+}
+
+@mixin before($content: '') {
+  &::before {
+    content: $content;
+    display: block;
+    @content;
+  }
+}
+
+@mixin after($content: '') {
+  &::after {
+    content: $content;
+    display: block;
+    @content;
+  }
+}
+
+
+
+// effect
+// @mixin trans($secend) {
+//     -webkit-transition:all $secend;
+//     transition:all $secend;
+// }
+
+@mixin tranflate50() {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin offeffect {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+@mixin oneffect {
+    -webkit-transform:translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@mixin bgwhite($bgwh) {
+    background: rgba(255,255,255,$bgwh);
+}
+
+@mixin bgblack($bgbk) {
+    background: rgba(0,0,0,$bgbk);
+}
