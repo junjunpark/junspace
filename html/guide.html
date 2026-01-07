@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>guide</title>
+<link rel="icon" href="../assets/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../assets/images/android-chrome-512x512.png">
+<link rel="mask-icon" href="../assets/images/jlogo.svg" color="#000000">
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+<style>
+    article {
+        padding: 100px 0;
+    }
+    .article-inner {
+        --content-inner: 800px;
+        max-width: calc(var(--content-inner) + (var(--side-padding) * 2));
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: var(--side-padding);
+        padding-left: var(--side-padding);
+    }
+    .section {
+        padding: 0;
+        margin-top: 40px;
+    }
+    .section h3, h4 {
+        margin-bottom: 12px;
+    }
+    .palette-wrap {
+        margin-top: -8px;
+        margin-left: -8px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .palette {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+    .palette > em {
+        margin-bottom: 8px;
+    }
+    .palette-box {
+        width: 60px;
+        height: 60px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(241, 241, 241)
+    }
+    .palette-box > span {
+        --font-color: #303030;
+    }
+    .contact-email .btn i {
+        font-style: normal;
+        margin-right: 4px;
+    }
+</style>
+</head>
+<body>
+
+<article>
+    <div class="article-inner">
+        <h1>Guide</h1>
+        <!-- typo -->
+        <section class="section">
+            <h3>typo</h3>
+            <h1 class="h1">제목 h1</h1>
+            <h2 class="h2">제목 h2</h2>
+            <h3 class="h3">제목 h3</h3>
+            <p class="body1">텍스트 body1</p>
+            <p class="body2">텍스트 body2</p>
+            <p class="body3">텍스트 body3</p>
+        </section>
+        <!-- color -->
+        <section class="section">
+            <h3>color</h3>
+            <div class="palette-wrap">
+                <div class="palette">
+                    <em class="body2">primary</em>
+                    <div class="palette-box" style="background-color: #21cda4;">
+                        <span class="body3" style="color:#fff">#21CDA4</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">co-point</em>
+                    <div class="palette-box" style="background-color: #0B3550;">
+                        <span class="body3" style="color:#fff">#0B3550</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">co-green</em>
+                    <div class="palette-box" style="background-color: #DEF2ED;">
+                        <span class="body3">#DEF2ED</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">co-white</em>
+                    <div class="palette-box" style="background-color: #fff;">
+                        <span class="body3">#FFFFFF</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">co-black</em>
+                    <div class="palette-box" style="background-color: #303030;">
+                        <span class="body3" style="color:#fff">#303030</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">warning</em>
+                    <div class="palette-box" style="background-color: #8f1111;">
+                        <span class="body3" style="color:#fff">#8f1111</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">caution</em>
+                    <div class="palette-box" style="background-color: #EB7E3A;">
+                        <span class="body3" style="color:#fff">#EB7E3A</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">text-color</em>
+                    <div class="palette-box" style="background-color: #777777;">
+                        <span class="body3" style="color:#fff">#777777</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">text-weak</em>
+                    <div class="palette-box" style="background-color: #999999;">
+                        <span class="body3" style="color:#fff">#999999</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">bg-color</em>
+                    <div class="palette-box" style="background-color: #f7f7f7;">
+                        <span class="body3">#F7F7F7</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">hash-bg</em>
+                    <div class="palette-box" style="background-color: #f2f2f2;">
+                        <span class="body3">#F2F2F2</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">tab-bg</em>
+                    <div class="palette-box" style="background-color: #E0E0E0;">
+                        <span class="body3">#E0E0E0</span>
+                    </div>
+                </div>
+                <div class="palette">
+                    <em class="body2">tab-color</em>
+                    <div class="palette-box" style="background-color: #686868;">
+                        <span class="body3" style="color:#fff">#686868</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- button -->
+        <section class="section">
+            <h3>button</h3>
+            <div class="btn-wrap">
+                
+
+
+  <button type="button"
+          class="btn sm"
+          >
+    <span>small</span>
+  </button>
+
+
+                
+
+
+  <button type="button"
+          class="btn gray sm"
+          >
+    <span>small</span>
+  </button>
+
+
+                
+
+
+  <button type="button"
+          class="btn sm"
+           disabled>
+    <span>disabled</span>
+  </button>
+
+
+                
+
+
+  <button type="button"
+          class="btn"
+          >
+    <span>button</span>
+  </button>
+
+
+                
+
+
+  <button type="button"
+          class="btn gray"
+          >
+    <span>button gray</span>
+  </button>
+
+
+                
+
+
+  <button type="button"
+          class="btn"
+           disabled>
+    <span>disabled</span>
+  </button>
+
+
+                
+
+
+  <a href="#"
+     class="btn primary lg"
+     target="_blank"
+     >
+    primary lg
+  </a>
+
+
+                
+
+
+  <a href="#"
+     class="btn primary gray lg"
+     target="_blank"
+     >
+    primary lg
+  </a>
+
+
+                
+
+
+  <a href="#"
+     class="btn primary lg disabled"
+     target="_blank"
+     >
+    primary lg
+  </a>
+
+
+
+                <!-- submit 타입 -->
+                
+
+
+  <button type="reset"
+          class="btn gray lg"
+          >
+    <span>reset</span>
+  </button>
+
+
+                <!-- submit 타입 -->
+                
+
+
+  <button type="submit"
+          class="btn primary lg"
+          >
+    <span>submit</span>
+  </button>
+
+
+            </div>
+        </section>
+        <!-- mail copy -->
+        <section class="section">
+            <h3>mail copy</h3>
+            <div class="contact-email">
+                
+
+
+  <button type="button"
+          class="btn line"
+           data-email="deerjun817@gmail.com" aria-label="이메일 주소 복사">
+    <span><i aria-hidden="true">✉</i><span aria-hidden="true">deerjun817@gmail.com</span></span>
+  </button>
+
+
+            </div>
+        </section>
+        <!-- list -->
+        <section class="section">
+            <h3>dot-list</h3>
+            <ul class="list-dot">
+                <li>리스트 리스트 리스트</li>
+                <li>리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트 리스트</li>
+            </ul>
+        </section>
+        <!-- image -->
+        <section class="section">
+            <h3>image</h3>
+            <div class="grid">
+                <div>
+                    <h4>링크없는 타입</h4>
+                    
+
+
+
+
+
+
+    <img src="../assets/images/work/pj10.jpg" alt="image"/>
+
+
+
+
+                </div>
+                <div>
+                    <h4>링크있는 타입</h4>
+                    
+
+
+
+
+    <a href="#" target="_blank">
+
+
+
+    <img src="../assets/images/work/pj25.jpg" alt="image"/>
+
+
+
+    </a>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- card -->
+        <section class="section">
+            <h3>card list</h3>
+                
+            <div class="card-list">
+    
+    <!-- card -->
+    <div class="card-box">
+        <div class="card-img">
+            
+
+
+
+
+    <a href="#" target="_blank">
+
+
+
+    <img src="../assets/images/work/pj25.jpg" alt="카드 이미지 1"/>
+
+
+
+    </a>
+
+
+        </div>
+        <div class="card-desc">
+            <h4 class="h3">프로젝트 제목 1</h4>
+            <div class="info">
+                <span class="body2">2024.01 ~ 2024.03</span>
+                <ul class="list-dot">
+                    
+                    <li>설명 1</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // card -->
+    
+    <!-- card -->
+    <div class="card-box">
+        <div class="card-img">
+            
+
+
+
+
+
+
+    <img src="../assets/images/work/pj24.jpg" alt="카드 이미지 2"/>
+
+
+
+
+        </div>
+        <div class="card-desc">
+            <h4 class="h3">프로젝트 제목 2</h4>
+            <div class="info">
+                <span class="body2">2024.04 ~ 2024.06</span>
+                <ul class="list-dot">
+                    
+                    <li>설명 A</li>
+                    
+                    <li>설명 B</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // card -->
+    
+    <!-- card -->
+    <div class="card-box">
+        <div class="card-img">
+            
+
+
+
+
+
+
+    <img src="../assets/images/work/pj23.jpg" alt="카드 이미지 3"/>
+
+
+
+
+        </div>
+        <div class="card-desc">
+            <h4 class="h3">프로젝트 제목 3</h4>
+            <div class="info">
+                <span class="body2">2024.07 ~ 2024.09</span>
+                <ul class="list-dot">
+                    
+                    <li>설명 가</li>
+                    
+                    <li>설명 나</li>
+                    
+                    <li>설명 다</li>
+                    
+                    <li>설명 라</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // card -->
+    
+    <!-- card -->
+    <div class="card-box">
+        <div class="card-img">
+            
+
+
+
+
+
+
+    <img src="../assets/images/work/pj22.jpg" alt="카드 이미지 4"/>
+
+
+
+
+        </div>
+        <div class="card-desc">
+            <h4 class="h3">프로젝트 제목 4</h4>
+            <div class="info">
+                <span class="body2">2024.10 ~ 2024.12</span>
+                <ul class="list-dot">
+                    
+                    <li>설명</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // card -->
+    
+</div>
+
+        </section>
+    </div>
+</article>
+
+    <!-- toast -->
+    <div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- js -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

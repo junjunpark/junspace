@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>layout</title>
+    <link rel="icon" href="../assets/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../assets/images/android-chrome-512x512.png">
+<link rel="mask-icon" href="../assets/images/jlogo.svg" color="#000000">
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+    <style>
+    .section-inner {
+        border: 2px solid red;
+    }
+    </style>
+</head>
+<body>
+    <div id="skip" class="skip">
+        <a href="#header">헤더바로가기</a>
+        <a href="#container">본문바로가기</a>
+    </div>
+    <div class="wrapper">
+        <!-- [s] header -->
+<header id="header" class="header">
+    <div class="inner">
+        <h1 id="logo" class="logo">
+            <a href="/" class="logo">
+                <img src="../assets/images/jlogo.svg" alt="JUN Portfolio">
+            </a>
+        </h1>
+        <nav class="nav" id="nav">
+            <ul class="gnb">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle-btn" aria-expanded="false" aria-controls="nav">
+            <span class="sr-only">메뉴 열기</span>
+        </button>
+    </div>
+</header>
+<!-- // [e] header -->
+
+        <main id="container" class="container">
+            <section class="section sec01" style="background-color: rgb(226, 156, 204);">
+                <div class="section-inner">이너영역</div>
+            </section>
+            <section class="section sec02" style="background-color: rgb(178, 153, 202);">
+                <div class="section-inner">이너영역<br>이너영역</div>
+            </section>
+            <section class="section sec03" style="background-color: rgb(153, 183, 202);">
+                <div class="section-inner">이너영역<br>이너영역<br>이너영역</div>
+            </section>
+            <section class="section sec04" style="background-color: rgb(160, 202, 153);">
+                <div class="section-inner">이너영역</div>
+            </section>
+        </main>
+        <footer id="footer" class="footer">
+    <div class="inner">
+        <p class="body2">Designed & Built by HYEJUNPARK</p>
+    </div>
+    <button type="button" id="gotop" class="gotoTop">
+        <span>TOP</span>
+    </button>
+</footer>
+
+    </div>
+    <!-- js -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
