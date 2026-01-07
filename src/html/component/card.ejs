@@ -1,26 +1,43 @@
 <div class="card-list">
-    <% for (let i = 0; i < cardBox.length; i++) { %>
+  <% for (let i = 0; i < cardBox.length; i++) {
+      const item = cardBox[i];
+      const linkUrl = item.linkUrl ? item.linkUrl : null;
+      const isLink = !!linkUrl;
+  %>
+
     <!-- card -->
-    <div class="card-box">
-        <div class="card-img">
-            <%- include('../atoms/image.ejs', {
-                    hasLink: cardBox[i].hasLink,
-                    imageSrc: cardBox[i].imageSrc,
-                    altText: cardBox[i].altText
-                }) %>
-        </div>
-        <div class="card-desc">
-            <h4 class="h3"><%- cardBox[i].title %></h4>
-            <div class="info">
-                <span class="body2"><%- cardBox[i].period %></span>
-                <ul class="list-dot">
-                    <% for (let j = 0; j < cardBox[i].descriptions.length; j++) { %>
-                    <li><%- cardBox[i].descriptions[j] %></li>
-                    <% } %>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- // card -->
+    <% if (isLink) { %>
+      <a class="card-box is-link" href="<%- linkUrl %>">
+    <% } else { %>
+      <div class="card-box">
     <% } %>
+
+        <div class="card-img">
+          <%- include('../atoms/image.ejs', {
+            imageSrc: item.imageSrc,
+            altText: item.altText,
+            mobileSrc: item.mobileSrc
+          }) %>
+        </div>
+
+        <div class="card-desc">
+          <h4 class="h3"><%- item.title %></h4>
+          <div class="info">
+            <span class="body2"><%- item.period %></span>
+            <ul class="list-dot">
+              <% for (let j = 0; j < item.descriptions.length; j++) { %>
+                <li><%- item.descriptions[j] %></li>
+              <% } %>
+            </ul>
+          </div>
+        </div>
+
+    <% if (isLink) { %>
+      </a>
+    <% } else { %>
+      </div>
+    <% } %>
+    <!-- // card -->
+
+  <% } %>
 </div>
