@@ -101,6 +101,10 @@ button {
   border: none;
 }
 
+picture {
+  display: block;
+}
+
 img {
   max-width: 100%;
   vertical-align: top;
@@ -374,6 +378,22 @@ p, .text, .body1 {
     gap: 12px;
     align-items: center;
   }
+}
+.card-box .card-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border: 1px solid #E2E2E2;
+}
+.card-box .card-img picture {
+  width: 100%;
+  height: 100%;
+}
+.card-box .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 @media only screen and (min-width: 768px) {
   .card-box .card-desc {
