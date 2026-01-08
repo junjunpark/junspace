@@ -27,7 +27,7 @@
      class="<%- className %><%- disabled ? ' disabled' : '' %>"
      target="<%- target %>"
      <%- disabled ? ' aria-disabled="true"' : '' %><%- dataAttrString %><%- ariaAttrString %>>
-    <%- text %>
+    <span><%- text %></span>
   </a>
 <% } else { %>
   <button type="<%- type %>"

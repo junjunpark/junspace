@@ -19,7 +19,9 @@
         <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>"/>
     </picture>
 <% } else { %>
-    <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>"/>
+    <picture>
+        <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>"/>
+    </picture>
 <% } %>
 
 <% if (hasLink) { %>
