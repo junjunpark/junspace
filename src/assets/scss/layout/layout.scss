@@ -297,6 +297,44 @@
     }
 }
 
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $co-black;
+    &.on {
+        transform: translateY(0);
+    }
+    h1 {
+        position: relative;
+        width: 40px;
+        z-index: 1;
+    }
+    .intor-wrapper {
+        width: 100%;
+        min-height: 100vh;
+    }
+    .transition {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
 
-
-
+html, body {
+    overflow-x: hidden;
+}
+.split,
+.profile-title {
+  will-change: transform, opacity;
+}
