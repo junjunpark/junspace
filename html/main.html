@@ -138,20 +138,20 @@
     <section class="section sec03" >
     <div class="section-inner">
         <h2 class="h2">WORK</h2>
-        <div class="tab-wrap sr-only">
-            <div class="tab-btn-list">
-                <a href="javascript:void(0)" class="tab-btn" data-filter="*">전체</a>
-                <a href="javascript:void(0)" class="tab-btn" data-filter="cate1">반응형</a>
-                <a href="javascript:void(0)" class="tab-btn" data-filter="cate2">웹·모바일</a>
+        <div class="tab">
+            <div class="tab-btns" role="tablist" aria-label="category tab">
+                <button class="btn sm gray tab-btn active" data-filter="*" role="tab" aria-selected="true" aria-controls="panel-all">전체</button>
+                <button class="btn sm gray tab-btn" data-filter="cate1" role="tab" aria-selected="false" aria-controls="panel-cate1">반응형</button>
+                <button class="btn sm gray tab-btn" data-filter="cate2"role="tab" aria-selected="false" aria-controls="panel-cate2">웹·모바일</button>
             </div>
-        </div>
-        <!-- project list -->
-        <div class="card-list">
+            <div class="tab-panel" role="tabpanel" aria-labelledby="tab-all">
+                <!-- project list -->
+                <div class="card-list">
   
 
     <!-- card -->
     
-      <div class="card-box">
+      <div class="card-box" data-category="cate1">
     
 
         <div class="card-img">
@@ -192,7 +192,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="https://biz.kebhana.com/index.jsp" target="_blank">
+      <a class="card-box is-link" href="https://biz.kebhana.com/index.jsp" target="_blank" data-category="cate2">
     
 
         <div class="card-img">
@@ -215,7 +215,7 @@
         <div class="card-desc">
           <h4 class="h3">하나은행 기업뱅킹 운영</h4>
           <div class="info">
-            <span class="body2">2024.02 ~ 2024.06</span>
+            <span class="body2">2024.02 ~ 2024.10</span>
             <ul class="list-dot">
               
                 <li>웹·모바일 운영</li>
@@ -235,7 +235,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="https://temha.io/" target="_blank">
+      <a class="card-box is-link" href="https://temha.io/" target="_blank" data-category="cate1">
     
 
         <div class="card-img">
@@ -276,7 +276,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="https://www.hfashionmall.com/main" target="_blank">
+      <a class="card-box is-link" href="https://www.hfashionmall.com/main" target="_blank" data-category="cate2">
     
 
         <div class="card-img">
@@ -317,7 +317,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="https://www.lottecard.co.kr/" target="_blank">
+      <a class="card-box is-link" href="https://www.lottecard.co.kr/" target="_blank" data-category="cate2">
     
 
         <div class="card-img">
@@ -360,7 +360,7 @@
 
     <!-- card -->
     
-      <div class="card-box">
+      <div class="card-box" data-category="cate1">
     
 
         <div class="card-img">
@@ -401,7 +401,7 @@
 
     <!-- card -->
     
-      <div class="card-box">
+      <div class="card-box" data-category="cate1">
     
 
         <div class="card-img">
@@ -442,7 +442,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="http://www.elumisoft.com/" target="_blank">
+      <a class="card-box is-link" href="http://www.elumisoft.com/" target="_blank" data-category="cate1">
     
 
         <div class="card-img">
@@ -483,7 +483,7 @@
 
     <!-- card -->
     
-      <div class="card-box">
+      <div class="card-box" data-category="cate1">
     
 
         <div class="card-img">
@@ -524,7 +524,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="http://www.redshoes.or.kr/" target="_blank">
+      <a class="card-box is-link" href="http://www.redshoes.or.kr/" target="_blank" data-category="cate1">
     
 
         <div class="card-img">
@@ -565,7 +565,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="http://www.dreamchef.kr/" target="_blank">
+      <a class="card-box is-link" href="http://www.dreamchef.kr/" target="_blank" data-category="cate1">
     
 
         <div class="card-img">
@@ -606,7 +606,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="http://www.copya.com/" target="_blank">
+      <a class="card-box is-link" href="http://www.copya.com/" target="_blank" data-category="cate2">
     
 
         <div class="card-img">
@@ -647,7 +647,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="http://www.iwomanlawyer.co.kr/" target="_blank">
+      <a class="card-box is-link" href="http://www.iwomanlawyer.co.kr/" target="_blank" data-category="cate2">
     
 
         <div class="card-img">
@@ -688,7 +688,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="https://sapyoung.com/" target="_blank">
+      <a class="card-box is-link" href="https://sapyoung.com/" target="_blank" data-category="cate1">
     
 
         <div class="card-img">
@@ -729,7 +729,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="https://hallims.co.kr/" target="_blank">
+      <a class="card-box is-link" href="https://hallims.co.kr/" target="_blank" data-category="cate1">
     
 
         <div class="card-img">
@@ -770,7 +770,7 @@
 
     <!-- card -->
     
-      <div class="card-box">
+      <div class="card-box" data-category="cate1">
     
 
         <div class="card-img">
@@ -811,7 +811,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="https://inv.hanseo.ac.kr/" target="_blank">
+      <a class="card-box is-link" href="https://inv.hanseo.ac.kr/" target="_blank" data-category="cate2">
     
 
         <div class="card-img">
@@ -852,7 +852,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="https://www.hlbelec.com/" target="_blank">
+      <a class="card-box is-link" href="https://www.hlbelec.com/" target="_blank" data-category="cate1">
     
 
         <div class="card-img">
@@ -893,7 +893,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="http://www.gagu824.com/" target="_blank">
+      <a class="card-box is-link" href="http://www.gagu824.com/" target="_blank" data-category="cate2">
     
 
         <div class="card-img">
@@ -934,7 +934,7 @@
 
     <!-- card -->
     
-      <a class="card-box is-link" href="http://eroemoto.com/" target="_blank">
+      <a class="card-box is-link" href="http://eroemoto.com/" target="_blank" data-category="cate1">
     
 
         <div class="card-img">
@@ -974,7 +974,10 @@
   
 </div>
 
-        <!-- // project list -->
+                <!-- // project list -->
+            </div>
+        </div>
+
     </div>
 </section>
 

@@ -375,12 +375,19 @@
         <section class="section">
             <h3>card list</h3>
                 
-            <div class="card-list">
+                <div class="tab">
+                    <div class="tab-btns" role="tablist" aria-label="category tab">
+                        <button class="btn sm gray tab-btn active" data-filter="*" role="tab" aria-selected="true" aria-controls="panel-all">전체</button>
+                        <button class="btn sm gray tab-btn" data-filter="cate1" role="tab" aria-selected="false" aria-controls="panel-cate1">반응형</button>
+                        <button class="btn sm gray tab-btn" data-filter="cate2"role="tab" aria-selected="false" aria-controls="panel-cate2">웹·모바일</button>
+                    </div>
+                    <div class="tab-panel" role="tabpanel" aria-labelledby="tab-all">
+                        <div class="card-list">
   
 
     <!-- card -->
     
-      <div class="card-box">
+      <a class="card-box is-link" href="#" target="_blank" data-category="cate2">
     
 
         <div class="card-img">
@@ -413,7 +420,7 @@
         </div>
 
     
-      </div>
+      </a>
     
     <!-- // card -->
 
@@ -421,7 +428,7 @@
 
     <!-- card -->
     
-      <div class="card-box">
+      <div class="card-box" data-category="cate1">
     
 
         <div class="card-img">
@@ -464,7 +471,7 @@
 
     <!-- card -->
     
-      <div class="card-box">
+      <div class="card-box" data-category="cate2">
     
 
         <div class="card-img">
@@ -511,7 +518,7 @@
 
     <!-- card -->
     
-      <div class="card-box">
+      <div class="card-box" data-category="cate1">
     
 
         <div class="card-img">
@@ -550,6 +557,9 @@
 
   
 </div>
+
+                    </div>
+                </div>
 
         </section>
     </div>

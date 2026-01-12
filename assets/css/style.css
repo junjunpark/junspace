@@ -221,6 +221,10 @@ p, .text, .body1 {
   border: 0;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .blur {
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
@@ -245,6 +249,10 @@ p, .text, .body1 {
 }
 .list-dot li:not(:first-child) {
   margin-top: 8px;
+}
+
+.tab .tab-btns {
+  margin-bottom: 1.7142857143rem;
 }
 
 /* components */
@@ -287,6 +295,16 @@ p, .text, .body1 {
   --btn-bgc: #E0E0E0;
   --btn-bdc: #E0E0E0;
 }
+.btn.gray.disabled, .btn.gray:disabled {
+  --btn-color: #777;
+  --btn-bdc: #999;
+  --btn-bgc: #999;
+}
+.btn.gray.active {
+  --btn-color: #FFF;
+  --btn-bdc: #21CDA4;
+  --btn-bgc: #21CDA4;
+}
 .btn.sm {
   --btn-pd: 4px;
   padding-left: 12px;
@@ -297,6 +315,9 @@ p, .text, .body1 {
 }
 .btn.sm.gray {
   --font-color: #686868;
+}
+.btn.sm.gray.active {
+  --font-color: #FFF;
 }
 .btn.sm.disabled, .btn.sm:disabled {
   --font-color: #777;
@@ -771,6 +792,11 @@ p, .text, .body1 {
 }
 .sec01 .mv-area {
   margin-left: auto;
+}
+@media only screen and (max-width: 767px) {
+  .sec01 .mv-area {
+    text-align: right;
+  }
 }
 .sec01 .mv-area .h1 {
   --font-color: #FFF;
