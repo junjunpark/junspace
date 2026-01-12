@@ -392,6 +392,12 @@ p, .text, .body1 {
     height: 1.4285714286rem;
   }
 }
+.card-box.is-link .card-img img {
+  transition: all 0.2s;
+}
+.card-box.is-link:hover .card-img img {
+  scale: 1.15;
+}
 @media only screen and (max-width: 767px) {
   .card-box {
     display: grid;
