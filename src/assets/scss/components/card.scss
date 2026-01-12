@@ -44,6 +44,16 @@
                     height: rem(20);
                 }
             }
+            img {
+                transition: all 0.2s;
+            }
+        }
+        &:hover {
+            .card-img {
+                img {
+                    scale: (1.15);
+                }
+            }
         }
     }
     @include media {
