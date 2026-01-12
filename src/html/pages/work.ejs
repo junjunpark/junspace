@@ -1,16 +1,19 @@
 <section class="section sec03" >
     <div class="section-inner">
         <h2 class="h2">WORK</h2>
-        <div class="tab-wrap sr-only">
-            <div class="tab-btn-list">
-                <a href="javascript:void(0)" class="tab-btn" data-filter="*">전체</a>
-                <a href="javascript:void(0)" class="tab-btn" data-filter="cate1">반응형</a>
-                <a href="javascript:void(0)" class="tab-btn" data-filter="cate2">웹·모바일</a>
+        <div class="tab">
+            <div class="tab-btns" role="tablist" aria-label="category tab">
+                <button class="btn sm gray tab-btn active" data-filter="*" role="tab" aria-selected="true" aria-controls="panel-all">전체</button>
+                <button class="btn sm gray tab-btn" data-filter="cate1" role="tab" aria-selected="false" aria-controls="panel-cate1">반응형</button>
+                <button class="btn sm gray tab-btn" data-filter="cate2"role="tab" aria-selected="false" aria-controls="panel-cate2">웹·모바일</button>
+            </div>
+            <div class="tab-panel" role="tabpanel" aria-labelledby="tab-all">
+                <!-- project list -->
+                <%- include("../component/card.ejs",{ cardBox: cardBox || [] }) %>
+                <!-- // project list -->
             </div>
         </div>
-        <!-- project list -->
-        <%- include("../component/card.ejs",{ cardBox: cardBox || [] }) %>
-        <!-- // project list -->
+
     </div>
 </section>
 

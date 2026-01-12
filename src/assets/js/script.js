@@ -42,25 +42,23 @@ async function copyToClipboard(text) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.addEventListener('click', async (e) => {
-        const copyBtn = e.target.closest('[data-email]');
-        if (!copyBtn) return;
-        const email = copyBtn.dataset.email;
+document.addEventListener('click', async (e) => {
+    const copyBtn = e.target.closest('[data-email]');
+    if (!copyBtn) return;
+    const email = copyBtn.dataset.email;
 
-        if (!email) {
-            console.warn('이메일 주소가 없습니다.');
-            return;
-        }
+    if (!email) {
+        console.warn('이메일 주소가 없습니다.');
+        return;
+    }
 
-        const success = await copyToClipboard(email);
+    const success = await copyToClipboard(email);
 
-        if (success) {
-            showToast('이메일 주소가 복사되었습니다.', 'success', 3000);
-        } else {
-            showToast('다시 한번 클릭해 주세요.', 'error', 4000);
-        }
-    });
+    if (success) {
+        showToast('이메일 주소가 복사되었습니다.', 'success', 3000);
+    } else {
+        showToast('다시 한번 클릭해 주세요.', 'error', 4000);
+    }
 });
 
 // ============================================
@@ -264,6 +262,40 @@ function scrollToSection(section, index) {
         behavior: 'smooth'
     });
 }
+
+// tab 영역
+const tabContainers = document.querySelectorAll('.tab');
+tabContainers.forEach(container => {
+    const tabBtns = container.querySelectorAll('.tab-btn');
+    const cards = container.querySelectorAll('.card-box');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+
+            // 버튼 상태 업데이트
+            tabBtns.forEach(b => {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+            });
+            this.classList.add('active');
+            this.setAttribute('aria-selected', 'true');
+
+            // 필터링
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category');
+
+                if (filter === '*' || category === filter) {
+                    card.classList.remove('hidden');
+                    card.removeAttribute('aria-hidden');
+                } else {
+                    card.classList.add('hidden');
+                    card.setAttribute('aria-hidden', 'true');
+                }
+            });
+        });
+    });
+});
 
 // ============================================
 // Top 버튼
