@@ -19,6 +19,9 @@
     background-size: 100%;
     .mv-area {
         margin-left: auto;
+        @include media {
+            text-align: right;
+        }
         .h1 {
             --font-color: #{$co-white};
             opacity: 0;

@@ -269,7 +269,8 @@
                 // 가이드용 데이터
                 const cardBox = [
                     {
-                        hasLink: '#',
+                        category: "cate2",
+                        linkUrl: '#',
                         imageSrc: 'work/pj25.jpg',
                         altText: '카드 이미지 1',
                         title: '프로젝트 제목 1',
@@ -277,6 +278,7 @@
                         descriptions: ['설명 1']
                     },
                     {
+                        category: "cate1",
                         imageSrc: 'work/pj24.jpg',
                         altText: '카드 이미지 2',
                         title: '프로젝트 제목 2',
@@ -284,6 +286,7 @@
                         descriptions: ['설명 A', '설명 B']
                     },
                     {
+                        category: "cate2",
                         imageSrc: 'work/pj23.jpg',
                         altText: '카드 이미지 3',
                         title: '프로젝트 제목 3',
@@ -291,6 +294,7 @@
                         descriptions: ['설명 가', '설명 나', '설명 다', '설명 라']
                     },
                     {
+                        category: "cate1",
                         imageSrc: 'work/pj22.jpg',
                         altText: '카드 이미지 4',
                         title: '프로젝트 제목 4',
@@ -299,7 +303,17 @@
                     }
                 ];
                 %>
-            <%- include('./component/card.ejs', { cardBox: cardBox }) %>
+                <div class="tab">
+                    <div class="tab-btns" role="tablist" aria-label="category tab">
+                        <button class="btn sm gray tab-btn active" data-filter="*" role="tab" aria-selected="true" aria-controls="panel-all">전체</button>
+                        <button class="btn sm gray tab-btn" data-filter="cate1" role="tab" aria-selected="false" aria-controls="panel-cate1">반응형</button>
+                        <button class="btn sm gray tab-btn" data-filter="cate2"role="tab" aria-selected="false" aria-controls="panel-cate2">웹·모바일</button>
+                    </div>
+                    <div class="tab-panel" role="tabpanel" aria-labelledby="tab-all">
+                        <%- include('./component/card.ejs', { cardBox: cardBox }) %>
+                    </div>
+                </div>
+
         </section>
     </div>
 </article>

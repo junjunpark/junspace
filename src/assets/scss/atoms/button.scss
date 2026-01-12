@@ -18,7 +18,7 @@
     line-height: var(--btn-lh);
     cursor: pointer;
 
-     &.disabled, &:disabled {
+    &.disabled, &:disabled {
         cursor: inherit;
         --btn-color: #{$text-color};
         --btn-bdc: #{$text-weak};
@@ -43,6 +43,16 @@
         --btn-color: #{$tab-color};
         --btn-bgc: #{$tab-bg};
         --btn-bdc: #{$tab-bg};
+        &.disabled, &:disabled {
+            --btn-color: #{$text-color};
+            --btn-bdc: #{$text-weak};
+            --btn-bgc: #{$text-weak};
+        }
+        &.active {
+            --btn-color: #{$co-white};
+            --btn-bdc: #{$primary};
+            --btn-bgc: #{$primary};
+        }
     }
 
     // size
@@ -54,6 +64,9 @@
         --font-color: #{$co-white};
         &.gray {
             --font-color: #{$tab-color};
+            &.active {
+                --font-color: #{$co-white};
+            }
         }
         &.disabled, &:disabled {
             --font-color: #{$text-color};

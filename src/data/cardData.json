@@ -1,5 +1,6 @@
 [
     {
+        "category": "cate1",
         "imageSrc": "work/pj26.jpg",
         "altText": "대원제약 썸네일",
         "title": "대원제약 B2B 온라인몰 구축",
@@ -9,17 +10,19 @@
         ]
     },
     {
+        "category": "cate2",
         "linkUrl": "https://biz.kebhana.com/index.jsp",
         "imageSrc": "work/pj25.jpg",
         "altText": "하나은행 썸네일",
         "title": "하나은행 기업뱅킹 운영",
-        "period": "2024.02 ~ 2024.06",
+        "period": "2024.02 ~ 2024.10",
         "descriptions": [
             "웹·모바일 운영",
             "상품몰·외환/수출입 UI 변경 및 개편 작업 참여"
         ]
     },
     {
+        "category": "cate1",
         "linkUrl": "https://temha.io/",
         "imageSrc": "work/pj24.jpg",
         "altText": "템플릿하우스 썸네일",
@@ -29,7 +32,8 @@
             "반응형 기반 모듈형 솔루션 커스터마이징 및 UI 마크업"
         ]
     },
-        {
+    {
+        "category": "cate2",
         "linkUrl": "https://www.hfashionmall.com/main",
         "imageSrc": "work/pj23.jpg",
         "altText": "H쇼핑몰 썸네일",
@@ -40,6 +44,7 @@
         ]
     },
     {
+        "category": "cate2",
         "linkUrl": "https://www.lottecard.co.kr/",
         "imageSrc": "work/pj22.jpg",
         "altText": "롯데카드 썸네일",
@@ -51,6 +56,7 @@
         ]
     },
     {
+        "category": "cate1",
         "imageSrc": "work/pj21.jpg",
         "altText": "FINEO 썸네일",
         "title": "FINEO 구축",
@@ -60,6 +66,7 @@
         ]
     },
     {
+        "category": "cate1",
         "imageSrc": "work/pj19.jpg",
         "altText": "클라엘 썸네일",
         "title": "클라엘 구축",
@@ -69,6 +76,7 @@
         ]
     },
     {
+        "category": "cate1",
         "linkUrl": "http://www.elumisoft.com/",
         "imageSrc": "work/pj18.jpg",
         "altText": "이루미소프트 썸네일",
@@ -79,6 +87,7 @@
         ]
     },
     {
+        "category": "cate1",
         "imageSrc": "work/pj17.jpg",
         "altText": "국민대학교 썸네일",
         "title": "2020국민대학교 건축대학 졸업작품 전시회 구축",
@@ -88,6 +97,7 @@
         ]
     },
     {
+        "category": "cate1",
         "linkUrl": "http://www.redshoes.or.kr/",
         "imageSrc": "work/pj15.jpg",
         "altText": "빨간운동화 썸네일",
@@ -98,6 +108,7 @@
         ]
     },
     {
+        "category": "cate1",
         "linkUrl": "http://www.dreamchef.kr/",
         "imageSrc": "work/pj14.jpg",
         "altText": "드림셰프 썸네일",
@@ -108,6 +119,7 @@
         ]
     },
     {
+        "category": "cate2",
         "linkUrl": "http://www.copya.com/",
         "imageSrc": "work/pj13.jpg",
         "altText": "카피아 썸네일",
@@ -118,6 +130,7 @@
         ]
     },
     {
+        "category": "cate2",
         "linkUrl": "http://www.iwomanlawyer.co.kr/",
         "imageSrc": "work/pj12.jpg",
         "altText": "이성숙법률사무소 썸네일",
@@ -128,6 +141,7 @@
         ]
     },
     {
+        "category": "cate1",
         "linkUrl": "https://sapyoung.com/",
         "imageSrc": "work/pj11.jpg",
         "altText": "사회평론 썸네일",
@@ -138,6 +152,7 @@
         ]
     },
     {
+        "category": "cate1",
         "linkUrl": "https://hallims.co.kr/",
         "imageSrc": "work/pj08.jpg",
         "altText": "한림기계 썸네일",
@@ -148,6 +163,7 @@
         ]
     },
     {
+        "category": "cate1",
         "imageSrc": "work/pj06.jpg",
         "altText": "프로젝트 어바웃 썸네일",
         "title": "프로젝트 어바웃 구축",
@@ -157,6 +173,7 @@
         ]
     },
     {
+        "category": "cate2",
         "linkUrl": "https://inv.hanseo.ac.kr/",
         "imageSrc": "work/pj05.jpg",
         "altText": "한서대학교 썸네일",
@@ -167,6 +184,7 @@
         ]
     },
     {
+        "category": "cate1",
         "linkUrl": "https://www.hlbelec.com/",
         "imageSrc": "work/pj04.jpg",
         "altText": "에이치엘비일렉 썸네일",
@@ -177,6 +195,7 @@
         ]
     },
     {
+        "category": "cate2",
         "linkUrl": "http://www.gagu824.com/",
         "imageSrc": "work/pj02.jpg",
         "altText": "디자인스페이스 썸네일",
@@ -187,6 +206,7 @@
         ]
     },
     {
+        "category": "cate1",
         "linkUrl": "http://eroemoto.com/",
         "imageSrc": "work/pj01.jpg",
         "altText": "엘로이모토 썸네일",
