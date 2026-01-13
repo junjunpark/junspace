@@ -84,11 +84,11 @@ splits.forEach((el, i) => {
 ScrollTrigger.matchMedia({
     "(min-width: 768px)": () => {
     gsap.utils.toArray(".profile-title").forEach((el) => {
-        gsap.fromTo(el, { opacity: 0, y: 70 }, {
+        gsap.fromTo(el, { opacity: 0, y: 30 }, {
                 opacity: 1,
                 y: 0,
                 ease: "none",
-                scrollTrigger: { trigger: el, start: "top 70%", end: "top 50%", scrub: true }
+                scrollTrigger: { trigger: el, start: "top 50%", end: "top 40%", scrub: true }
             });
         });
     },
