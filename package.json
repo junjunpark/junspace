@@ -13,10 +13,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "deploy": "gulp build && gh-pages -d dist"
+    "build": "gulp build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "browser-sync": "^3.0.4",
+    "del": "^6.1.1",
     "gh-pages": "^6.3.0",
     "gulp": "^4.0.2",
     "gulp-ejs": "^5.1.0",
