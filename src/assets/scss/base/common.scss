@@ -167,7 +167,27 @@ p, .text, .body1 {
         }
     }
 }
-
+.list-tag {
+    @include flex(center,flex-start);
+    flex-wrap: wrap;
+    margin-top: -4px;
+    margin-left: -4px;
+    padding-top: 8px;
+    li {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4px;
+        margin-left: 4px;
+        padding: 4px;
+        border-radius: 4px;
+        background-color: $hash-bg;
+        @include typo('body2');
+        // &:not(:first-child){
+        //     margin-left: 4px;
+        // }
+    }
+}
 .tab {
     .tab-btns {
         margin-bottom: rem(24);

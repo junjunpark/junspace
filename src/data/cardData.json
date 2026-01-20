@@ -2,218 +2,222 @@
     {
         "category": "cate1",
         "imageSrc": "work/pj26.jpg",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/B2B-2d2bc42ece02809aa07fc21b817347e0",
         "altText": "대원제약 썸네일",
         "title": "대원제약 B2B 온라인몰 구축",
         "period": "2024.11 ~ 2025.08",
         "descriptions": [
-            "컴포넌트 단위로 작업을 구성해 재 사용성과 유지보수성을 높이는 방식 적용"
+            "이커머스","Figma","Gulp","Git", "SVN"
         ]
     },
     {
         "category": "cate2",
-        "linkUrl": "https://biz.kebhana.com/index.jsp",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece02808786cde553da368793",
         "imageSrc": "work/pj25.jpg",
         "altText": "하나은행 썸네일",
         "title": "하나은행 기업뱅킹 운영",
         "period": "2024.02 ~ 2024.10",
         "descriptions": [
-            "웹·모바일 운영",
-            "상품몰·외환/수출입 UI 변경 및 개편 작업 참여"
+            "금융권", "웹접근성", "UI개선", "ICS", "웹뷰","Zeplin"
         ]
     },
     {
         "category": "cate1",
-        "linkUrl": "https://temha.io/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/UI-2d3bc42ece028026b5edf142e78fc73f",
         "imageSrc": "work/pj24.jpg",
         "altText": "템플릿하우스 썸네일",
         "title": "템플릿하우스 솔루션 UI개선",
         "period": "2023.11 ~ 2023.12",
         "descriptions": [
-            "반응형 기반 모듈형 솔루션 커스터마이징 및 UI 마크업"
+            "솔루션", "UI개선", "Adobe XD", "GitLab"
         ]
     },
     {
         "category": "cate2",
-        "linkUrl": "https://www.hfashionmall.com/main",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/H-2d3bc42ece02805dbf68c0e916594d09?pvs=74",
         "imageSrc": "work/pj23.jpg",
         "altText": "H쇼핑몰 썸네일",
         "title": "한섬 H쇼핑몰 브랜드관 리뉴얼 퍼블리싱",
         "period": "2023.03 ~ 2023.06",
         "descriptions": [
-            "브랜드관 메인·서브 페이지 퍼블리싱"
+            "이커머스","Figma","Gulp","리뉴얼"
         ]
     },
     {
         "category": "cate2",
-        "linkUrl": "https://www.lottecard.co.kr/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece028073b454ce6e70991553",
         "imageSrc": "work/pj22.jpg",
         "altText": "롯데카드 썸네일",
         "title": "롯데카드 퍼블리싱 운영",
         "period": "2021.06 ~ 2022.12",
         "descriptions": [
-            "웹·모바일 운영",
-            "신규 콘텐츠 업데이트 및 가이드 제작"
+            "금융권","UI개선", "웹뷰", "Zira", "가이드제작"
+
         ]
     },
     {
         "category": "cate1",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/FINEO-2d3bc42ece0280388893fdebb59a6de5",
         "imageSrc": "work/pj21.jpg",
         "altText": "FINEO 썸네일",
         "title": "FINEO 구축",
         "period": "2021.01 ~ 2021.02",
         "descriptions": [
-            "고객사 디자이너 제공 시안을 기반으로 마크업"
+            "제조업","퍼블리싱", "Zeplin", "Javascript"
         ]
     },
     {
         "category": "cate1",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280c8b058c3bcbdaf9cad",
         "imageSrc": "work/pj19.jpg",
         "altText": "클라엘 썸네일",
-        "title": "클라엘 구축",
+        "title": "클라엘 온라인몰 구축",
         "period": "2020.10 ~ 2020.12",
         "descriptions": [
-            "사용자 선택 기반 추천 UI 및 결과 화면, 반응형 레이아웃 마크업"
+            "이커머스","UI개발","Javascript"
         ]
     },
     {
         "category": "cate1",
-        "linkUrl": "http://www.elumisoft.com/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2cdbc42ece028026a987d6f367aeb2dc",
         "imageSrc": "work/pj18.jpg",
         "altText": "이루미소프트 썸네일",
         "title": "이루미소프트 구축",
         "period": "2020.09",
         "descriptions": [
-            "고객사 디자이너와 협업하여 시안 기반 마크업"
+            "기술서비스업","퍼블리싱","Zeplin", "gnuboard"
         ]
     },
     {
         "category": "cate1",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2020-2d3bc42ece0280449142e63381aaf1e6",
         "imageSrc": "work/pj17.jpg",
         "altText": "국민대학교 썸네일",
         "title": "2020국민대학교 건축대학 졸업작품 전시회 구축",
         "period": "2020.07",
         "descriptions": [
-            "전시사이트 구축 및 인터랙티브 UI 구현"
+            "교육서비스","Adobe XD","UI개발"
         ]
     },
     {
         "category": "cate1",
-        "linkUrl": "http://www.redshoes.or.kr/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece028089bb36deef45d4cecf",
         "imageSrc": "work/pj15.jpg",
         "altText": "빨간운동화 썸네일",
         "title": "빨간운동화 구축",
         "period": "2020.03 ~ 2020.04",
         "descriptions": [
-            "디자인부터 반응형 마크업까지 전반적인 작업 수행"
+            "교육서비스","디자인","퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate1",
-        "linkUrl": "http://www.dreamchef.kr/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280569141fc5e8c2a30f9",
         "imageSrc": "work/pj14.jpg",
         "altText": "드림셰프 썸네일",
         "title": "드림셰프 구축",
         "period": "2020.01 ~ 2020.02",
         "descriptions": [
-            "디자인부터 반응형 마크업까지 전반적인 작업 수행"
+            "제조업","디자인","퍼블리싱"
         ]
     },
     {
         "category": "cate2",
-        "linkUrl": "http://www.copya.com/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280549e42f7d3b5890c68",
         "imageSrc": "work/pj13.jpg",
         "altText": "카피아 썸네일",
         "title": "카피아 구축",
         "period": "2019.12",
         "descriptions": [
-            "웹 화면 마크업 및 인터랙션 효과 구현"
+            "기술서비스업","퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate2",
-        "linkUrl": "http://www.iwomanlawyer.co.kr/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece02808bba85ca3da145faf6",
         "imageSrc": "work/pj12.jpg",
         "altText": "이성숙법률사무소 썸네일",
         "title": "이성숙법률사무소 구축",
         "period": "2019.11",
         "descriptions": [
-            "서브 페이지 디자인 및 화면 마크업"
+            "법률사무소","디자인", "퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate1",
-        "linkUrl": "https://sapyoung.com/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece02802289dde82602c7d4e6",
         "imageSrc": "work/pj11.jpg",
         "altText": "사회평론 썸네일",
         "title": "사회평론 구축",
         "period": "2019.07 ~ 2019.09",
         "descriptions": [
-            "서브 페이지 디자인 및 반응형 레이아웃 마크업"
+            "출판사","디자인", "퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate1",
-        "linkUrl": "https://hallims.co.kr/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280b7aeeee8268234c976",
         "imageSrc": "work/pj08.jpg",
         "altText": "한림기계 썸네일",
         "title": "한림기계 구축",
         "period": "2019.05 ~ 2019.07",
         "descriptions": [
-            "서브 페이지 디자인 및 반응형 레이아웃 마크업"
+            "제조업","디자인", "퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate1",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece02804682d4ccb289d24370",
         "imageSrc": "work/pj06.jpg",
         "altText": "프로젝트 어바웃 썸네일",
         "title": "프로젝트 어바웃 구축",
         "period": "2019.04 ~ 2019.05",
         "descriptions": [
-            "서브페이지 디자인, 반응형 레이아웃 마크업  "
+            "엔터테이먼트","디자인", "퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate2",
-        "linkUrl": "https://inv.hanseo.ac.kr/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/HS-2d3bc42ece0280e5ae17dfde089bc5c1",
         "imageSrc": "work/pj05.jpg",
         "altText": "한서대학교 썸네일",
         "title": "한서대학교 구축",
         "period": "2019.03 ~ 2019.04",
         "descriptions": [
-            "서브페이지 디자인, 웹 화면 마크업"
+            "교육서비스","디자인", "퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate1",
-        "linkUrl": "https://www.hlbelec.com/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece02805e81f8ebad88141bc0",
         "imageSrc": "work/pj04.jpg",
         "altText": "에이치엘비일렉 썸네일",
         "title": "에이치엘비일렉 구축",
         "period": "2019.02 ~ 2019.03",
         "descriptions": [
-            "서브 페이지 디자인, 반응형 레이아웃 마크업"
+            "제조업","디자인", "퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate2",
-        "linkUrl": "http://www.gagu824.com/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280b0b43fd36410318010",
         "imageSrc": "work/pj02.jpg",
         "altText": "디자인스페이스 썸네일",
-        "title": "디자인스페이스 쇼핑몰 구축",
+        "title": "디자인스페이스 온라인몰 구축",
         "period": "2019.01",
         "descriptions": [
-            "솔루션 커스터마이징 및 화면 마크업 "
+            "이커머스","도소매업","퍼블리싱","gnuboard"
         ]
     },
     {
         "category": "cate1",
-        "linkUrl": "http://eroemoto.com/",
+        "linkUrl": "https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280eeb7fbece0d6a2cfea",
         "imageSrc": "work/pj01.jpg",
         "altText": "엘로이모토 썸네일",
         "title": "엘로이모토 구축",
         "period": "2018.12",
         "descriptions": [
-            "반응형 레이아웃 마크업 "
+            "도소매업","퍼블리싱","gnuboard"
         ]
     }
 ]
