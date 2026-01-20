@@ -250,6 +250,28 @@ p, .text, .body1 {
   margin-top: 8px;
 }
 
+.list-tag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: -4px;
+  margin-left: -4px;
+  padding-top: 8px;
+}
+.list-tag li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  margin-left: 4px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  font-size: 0.8571428571rem;
+  color: var(--font-color, #999);
+}
+
 .tab .tab-btns {
   margin-bottom: 1.7142857143rem;
 }
