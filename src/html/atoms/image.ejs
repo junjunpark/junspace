@@ -1,10 +1,11 @@
 <%
     const hasLink = locals.hasLink ? locals.hasLink : null,
-        hasMobile = locals.hasMobile ? true : false,
+        //hasMobile = locals.hasMobile ? true : false,
         mobileSrc = locals.mobileSrc ? locals.mobileSrc : null,
         imageSrc = locals.imageSrc ? locals.imageSrc : "ho.jpg",
         imagePath = "../assets/images/",
-        altText = locals.altText ? locals.altText : "이미지";
+        altText = locals.altText ? locals.altText : "이미지",
+        loadingLazy = locals.loadingLazy ? 'loading="lazy"' : '' ;
 %>
 
 
@@ -16,11 +17,11 @@
 <% if (mobileSrc) { %>
     <picture>
         <source media="(max-width: 767px)" srcset="<%- imagePath + mobileSrc %>"/>
-        <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>"/>
+        <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>" <%- loadingLazy %>>
     </picture>
 <% } else { %>
     <picture>
-        <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>"/>
+        <img src="<%- imagePath + imageSrc %>" alt="<%- altText %>" <%- loadingLazy %>>
     </picture>
 <% } %>
 
