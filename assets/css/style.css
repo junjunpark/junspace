@@ -897,6 +897,11 @@ html, body {
 .sec02 .profile {
   margin-bottom: 1.7142857143rem;
 }
+@media only screen and (max-width: 767px) {
+  .sec02 .profile {
+    margin-bottom: 3.4285714286rem;
+  }
+}
 .sec02 .profile-img {
   display: flex;
   align-items: center;
