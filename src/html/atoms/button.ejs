@@ -5,7 +5,7 @@
         text = locals.text ? locals.text : '바로가기',
         className = locals.className ? 'btn ' + locals.className : 'btn',
         type = (locals.type === 'submit' || locals.type === 'reset') ? locals.type : 'button',
-        disabled = locals.disabled ? true : false,
+        disabled = locals.disabled ?? false,
         dataAttrs = locals.dataAttrs ? locals.dataAttrs : {},
         ariaAttrs = locals.ariaAttrs ? locals.ariaAttrs : {};
 

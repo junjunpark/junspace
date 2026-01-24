@@ -55,6 +55,9 @@
 .sec02 {
     .profile {
         margin-bottom: rem(24);
+        @include media {
+            margin-bottom: rem(48);
+        }
     }
     .profile-img {
         @include flex(center, center);
