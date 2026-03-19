@@ -31,15 +31,36 @@
         <div class="grid">
             <div class="about-box split">
                 <h3 class="h3">SKILL & TOOL</h3>
-                <ul class="list-dot">
-                    <li>HTML5 시맨틱 마크업 및 JavaScript 라이브러리 활용</li>
-                    <li>CSS·SCSS 활용, 반응형·적응형 퍼블리싱</li>
-                    <li>브라우저 호환성 이슈 및 웹 접근성 대응</li>
-                    <li>UI 컴포넌트 제작 및 구조화 작업 가능</li>
-                    <li>솔루션 환경에서의 UI 커스터마이징</li>
-                    <li>Git, SVN 버전 관리 환경에서 작업</li>
-                    <li>Figma, Zeplin, Adobe XD 디자인 시안 확인 및 협업</li>
-                </ul>
+                <div class="tool-list">
+                <%
+                    const tools = [
+                    { src: '/tool/tool_logo01.png', alt: 'html' },
+                    { src: '/tool/tool_logo02.png', alt: 'css' },
+                    { src: '/tool/tool_logo03.png', alt: 'javascript' },
+                    { src: '/tool/tool_logo04.png', alt: 'jQuery' },
+                    { src: '/tool/tool_logo05.png', alt: 'vscode' },
+                    { src: '/tool/tool_logo06.png', alt: 'vue' },
+                    { src: '/tool/tool_logo07.png', alt: 'git' },
+                    { src: '/tool/tool_logo08.png', alt: 'gulp' },
+                    { src: '/tool/tool_logo09.png', alt: 'node js' },
+                    { src: '/tool/tool_logo10.png', alt: 'bootstrap' },
+                    { src: '/tool/tool_logo11.png', alt: 'tailwind' },
+                    { src: '/tool/tool_logo12.png', alt: 'figma' },
+                    { src: '/tool/tool_logo13.png', alt: 'photoshop' },
+                    { src: '/tool/tool_logo14.png', alt: 'illustrator' },
+                    { src: '/tool/tool_logo15.png', alt: 'adobe xd' },
+                    { src: '/tool/tool_logo16.png', alt: 'zeplin' },
+                    { src: '/tool/tool_logo17.png', alt: 'notion' },
+                    { src: '/tool/tool_logo18.png', alt: 'slack' },
+                ];
+                %>
+                <% tools.forEach(tool => { %>
+                    <div>
+                        <%- include('../atoms/image.ejs', { imageSrc: tool.src, altText: tool.alt }) %>
+                    </div>
+                <% }) %>
+
+                </div>
             </div>
             <div class="about-box split">
                 <h3 class="h3">Certifications</h3>
