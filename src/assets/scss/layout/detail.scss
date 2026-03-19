@@ -16,7 +16,7 @@
     height: 40%;
     @include bg("mv.jpg", left 38%);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     .mv-area {
         margin-left: auto;
         @include media {
@@ -85,6 +85,19 @@
     .about-box {
         .h3 + .list-dot {
             margin-top: rem(16);
+        }
+    }
+    .tool-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: rem(16);
+        margin-left: rem(-8);
+        > div {
+            margin-top: rem(8);
+            margin-left: rem(8);
+        }
+        img {
+            max-width: 60px;
         }
     }
 }
