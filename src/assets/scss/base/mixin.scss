@@ -44,7 +44,7 @@
 }
 
 // rem
-$base-font-size: 14;
+$base-font-size: 16;
 
 @function rem($px, $base: $base-font-size) {
   @return calc($px / $base) * 1rem;
