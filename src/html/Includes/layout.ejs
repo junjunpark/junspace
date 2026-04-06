@@ -1,46 +1,149 @@
 <main id="container" class="container">
+    <!-- [s] sec01 -->
     <section class="section sec01">
-        <div class="section-inner">
-            <div class="flex">
-                <div class="mv-area">
-                    <h3 class="h1">Designing <br>Web Structures.</h3>
-                    <p class="body1">Hi there!<br>
-                    I love crafting websites and experimenting with new ideas.<br>
-                    Take a look at my work.
+        <div class="section-area">
+            <div class="section-inner">
+                <div class="flex">
+                    <div class="main-text">
+                        <h2 class="title">
+                            <div>
+                                <span data-splitting>Designing</span>
+                            </div>
+                            Web Structures.
+                            <em>Web Publishing · UI/UX Markup</em>
+                        </h2>
+                        <div id="lottie1" aria-hidden="true">
+                            <dotlottie-wc
+                            src="https://lottie.host/ad509636-cabc-48b4-9bf6-d6ebb877535c/qxVSTPnWSv.lottie"
+                            style="width: 200px;height: 200px"
+                            autoplay
+                            loop
+                            ></dotlottie-wc>
+                        </div>
+                    </div>
+                    <div class="sub-title">
+                        안녕하세요. 웹 퍼블리셔 박혜준입니다.<br>
+                        더 나은 사용자 경험을 위해<br>
+                        새로운 아이디어를 끊임없이 탐구합니다.
+                    </div>
+                    <p class="body3">
+                        I enjoy crafting user-friendly websites<br>
+                        and continuously exploring new ideas<br>
+                        to improve the overall user experience.
                     </p>
                 </div>
             </div>
-            <!-- <div class="mv-box">
-
-            </div> -->
         </div>
     </section>
+    <!-- [e] sec01 -->
+    <!-- [s] sec02 -->
+    <section class="section sec02">
+        <div class="section-area">
+            <div class="section-inner">
+                <div class="flex">
+                    <h2 class="title">About me</h2>
+                    <div class="profile">
+                        <div class="img">
+                            <img src="../assets/images/profile2.png" alt="">
+                        </div>
+                        <div class="sub-text">
+                            <p>
+                            웹 퍼블리셔 박혜준입니다.<br>
+                            유연하게 사고하고 꾸준히 노력합니다.<br>
+                            차근차근 화면을 만들어가는 것을 좋아합니다.<br>
+                            더 좋은 마크업을 세심하게 고민합니다.<br>
+                            디자인과 개발에도 관심이 많습니다.<br>
+                            늘 새로운 것을 배우는 것에 도전합니다.</p>
+                            <a href="https://liberating-jasmine-2fc.notion.site/2cabc42ece0280f29ceece0aef3622a7?pvs=73" target="_blank" class="btn-link">
+                                <span>자기소개 더보기</span>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="tool-list">
+                    <%
+                        const tools = [
+                        { src: '/tool/tool_logo01.png', alt: 'html' },
+                        { src: '/tool/tool_logo02.png', alt: 'css' },
+                        { src: '/tool/tool_logo03.png', alt: 'javascript' },
+                        { src: '/tool/tool_logo04.png', alt: 'jQuery' },
+                        { src: '/tool/tool_logo05.png', alt: 'vscode' },
+                        { src: '/tool/tool_logo06.png', alt: 'vue' },
+                        { src: '/tool/tool_logo07.png', alt: 'git' },
+                        { src: '/tool/tool_logo08.png', alt: 'gulp' },
+                        { src: '/tool/tool_logo09.png', alt: 'node js' },
+                        { src: '/tool/tool_logo10.png', alt: 'bootstrap' },
+                        { src: '/tool/tool_logo11.png', alt: 'tailwind' },
+                        { src: '/tool/tool_logo12.png', alt: 'figma' },
+                        { src: '/tool/tool_logo13.png', alt: 'photoshop' },
+                        { src: '/tool/tool_logo14.png', alt: 'illustrator' },
+                        { src: '/tool/tool_logo15.png', alt: 'adobe xd' },
+                        { src: '/tool/tool_logo16.png', alt: 'zeplin' },
+                        { src: '/tool/tool_logo17.png', alt: 'notion' },
+                        { src: '/tool/tool_logo18.png', alt: 'slack' },
+                    ];
+                    %>
+                    <% tools.forEach(tool => { %>
+                        <li>
+                            <%- include('../atoms/image.ejs', { imageSrc: tool.src, altText: tool.alt }) %>
+                        </li>
+                    <% }) %>
 
-    <%- include("../pages/about.ejs") %>
-    <%- include("../pages/work.ejs", { cardBox: cardBox }) %>
-
-    <section class="section sec04">
-        <div class="section-inner">
-            <h2 class="h2">CONTACT</h2>
-            <div class="flex">
-                <div class="contact-area split">
-                    <h3 class="h3">저에게 궁금한 점이 있으시다면 <br>언제든지 연락주세요!</h3>
-                    <p class="body1">메일 주시면 확인 후 회신 드리겠습니다. <br>감사합니다.</p>
-                    <div class="contact-email">
-
-                        <%- include('../atoms/button.ejs', {
-                            text: `<i aria-hidden="true">✉</i><span aria-hidden="true">deerjun817@gmail.com</span>`,
-                            className: 'line',
-                            dataAttrs: { 'email': 'deerjun817@gmail.com' },
-                            ariaAttrs: { 'label': '이메일 주소 복사' }
-                        }) %>
-
-                        <p class="body3">↑ 클릭하시면 메일 주소가 복사됩니다.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [e] sec02 -->
+    <!-- [s] sec03-->
+    <section class="section sec03">
+        <div class="section-area">
+            <div class="section-inner">
+                <div class="flex">
+                    <h2 class="title">Project</h2>
+                    <p class="bg-text" tabindex="-1" aria-hidden="true">Work</p>
+                    <div class="project-list card-list">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <%- include("../component/card.ejs",{ cardBox: cardBox || [] }) %>
+                            </div>
+                            <div class="swiper-button-prev" aria-label="previous slide"></div>
+                            <div class="swiper-button-next" aria-label="next slide"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- [e] sec03 -->
+    <!-- [s] sec04 -->
+    <section class="section sec04">
+        <div class="section-area">
+            <div class="section-inner">
+                <div class="flex">
+                    <h3 class="title">Contact</h3>
+                    <div class="text">
+                        저에게 궁금한 점이 있으시다면<br>
+                        언제라도 편하게 연락주세요.<br>
+                        메일 주시면 확인 후 회신 드리겠습니다.<br>감사합니다.🙂
+                    </div>
+                    <div id="lottie2" aria-hidden="true">
+                        <dotlottie-wc
+                            src="https://lottie.host/8820c267-53a7-4ccc-b590-7e69a6f0f6ba/uYgdSj242k.lottie"
+                            style="width: 200px;height: 200px"
+                            autoplay
+                            loop
+                            ></dotlottie-wc>
+                    </div>
+                    <a href="mailto:deerjun817@gmail.com" class="mail">deerjun817@gmail.com</a>
+                    <a href="https://liberating-jasmine-2fc.notion.site/2cabc42ece0280f29ceece0aef3622a7?pvs=73" class="btn-link">
+                        <span>Notion 바로가기</span>
+                    </a>
+                    <h6 class="copy">Made by <strong>HYEJUN PARK</strong></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [e] sec04 -->
 </main>
 
 

@@ -54,22 +54,28 @@ $base-font-size: 16;
 // typo
 @mixin typo($type: 'body1') {
   @if $type == 'h1' {
-    font-size: rem(40);
+    font-size: rem(96);
     color: var(--font-color, $co-black);
   } @else if $type == 'h2' {
-    font-size: rem(24);
+    font-size: rem(64);
     color: var(--font-color, $co-black);
+    @include media {
+        font-size: rem(48);
+    }
   } @else if $type == 'h3' {
-    font-size: rem(18);
+    font-size: rem(32);
     color: var(--font-color, $co-black);
   } @else if $type == 'body1' {
-    font-size: rem(14);
-    color: var( --font-color, $text-color)
+    font-size: rem(24);
+    color: var( --font-color, $text-color);
+    @include media {
+        font-size: rem(16);
+    }
   } @else if $type == 'body2' {
-    font-size: rem(12);
+    font-size: rem(20);
     color: var( --font-color, $text-weak);
   } @else if $type == 'body3' {
-    font-size: rem(10);
+    font-size: rem(16);
     color: var( --font-color, $text-weak);
   }
 }

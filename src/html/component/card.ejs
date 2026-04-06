@@ -1,10 +1,10 @@
-<div class="card-list">
+
   <% for (let i = 0; i < cardBox.length; i++) {
       const item = cardBox[i];
       const linkUrl = item.linkUrl ? item.linkUrl : null;
       const isLink = !!linkUrl;
   %>
-
+    <div class="swiper-slide">
     <!-- card -->
     <% if (isLink) { %>
       <a class="card-box is-link" href="<%- linkUrl %>" target="_blank" data-category="<%- item.category %>">
@@ -22,10 +22,10 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3"><%- item.title %></h4>
+          <h4 class="text"><%- item.title %></h4>
           <div class="info">
-            <span class="body2"><%- item.period %></span>
-            <ul class="list-tag">
+            <span><%- item.period %></span>
+            <ul class="dot-list">
               <% for (let j = 0; j < item.descriptions.length; j++) { %>
                 <li><%- item.descriptions[j] %></li>
               <% } %>
@@ -39,6 +39,5 @@
       </div>
     <% } %>
     <!-- // card -->
-
+    </div>
   <% } %>
-</div>

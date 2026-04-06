@@ -99,6 +99,99 @@ p, .text, .body1 {
 
 .body3 {
     @include typo('body3');
+    line-height: 1.5;
+}
+
+.title {
+    @include typo('h2');
+    font-family: "Racing Sans One", sans-serif;
+    --font-color: #{$co-white};
+    line-height: 1.2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0;
+}
+.sub-title {
+    @include typo('h3');
+    --font-color: #{$co-white};
+    font-weight: 400;
+    line-height: 1.5;
+}
+.text {
+    @include typo('body1');
+    --font-color: #{$co-white};
+    font-weight: 400;
+    line-height: 1.5;
+    p {
+        --font-color:#{$co-white};
+    }
+}
+.sub-text {
+    @include typo('body2');
+    --font-color: #{$co-white};
+    font-weight: 400;
+    line-height: 1.5;
+}
+.dot-list {
+    li {
+        @include typo('body3');
+        --font-color: #{$co-white};
+        font-weight: 400;
+        line-height: 1.2;
+        padding-top: 8px;
+        padding-left: 16px;
+        position: relative;
+        @include media {
+            font-size: 0.75rem;
+        }
+        &::before {
+            content:'';
+            width: 4px;
+            height: 4px;
+            background-color: #ddd;
+            position: absolute;
+            top: 16px;
+            left: 0;
+            border-radius: 50%;
+        }
+    }
+}
+
+.btn-link {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #2965F1;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    span {
+        position: relative;
+        display: inline-flex;
+        padding-right: 32px;
+        &::after {
+            content:'';
+            width: 24px;
+            height: 24px;
+            background-image: url('../images/ico_arrow.png');
+            background-size: contain;
+            background-position: center;
+            background-color: #2965F1;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            // margin-left: 8px;
+        }
+    }
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
 }
 
 /* alignment */
@@ -124,6 +217,7 @@ p, .text, .body1 {
     overflow:hidden;
     position: fixed;
     width: 100%;
+    touch-action: none;
 }
 
 .dimmed {
