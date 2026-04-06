@@ -14,9 +14,8 @@
     <div class="wrapper">
         <%- include("./includes/header.ejs") %>
         <%- include("./includes/layout.ejs", { cardBox: cardBox || [] }) %>
-        <%- include("./includes/footer.ejs") %>
     </div>
-    <div id="intro" class="intro on" tabindex="-1">
+    <!-- <div id="intro" class="intro on" tabindex="-1">
         <h1>
             <img src="../assets/images/jlogo-w.svg" alt="JUN Portfolio">
         </h1>
@@ -31,17 +30,25 @@
                 <path class="path" stroke="url(#grad)" fill="url(#grad)" stroke-width="2px" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
             </svg>
         </div>
-    </div>
+    </div> -->
     <!-- toast -->
     <div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-atomic="true"></div>
 
     <!-- js -->
-    <script src="../assets/js/script.js"></script>
+    <!-- <script src="../assets/js/script.js"></script> -->
+
+    <!-- swiper -->
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.0.7/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.0.7/swiper-bundle.min.js"></script>
+
+    <!-- splitting -->
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
     <!-- gsap -->
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/MorphSVGPlugin.min.js"></script>
+    <!-- <script src="https://unpkg.com/gsap@3/dist/MorphSVGPlugin.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script> -->
 
     <script src="../assets/js/animation.js"></script>
 

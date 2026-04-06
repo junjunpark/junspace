@@ -3,18 +3,26 @@
 
 /* header */
 .header {
-    position: relative;
+    position: fixed;
+    top:0;
+    left: 0;
     width: 100%;
-    background-color: $co-white;
-    box-shadow: 4px 4px 12px 4px rgb(0 0 0 / 4%);
+    background-color: rgba(0,0,0,0.3);
+    z-index: 99;
+    transition: all 0.3s;
+    // box-shadow: 4px 4px 12px 4px rgb(0 0 0 / 4%);
 
-    &.fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 99;
+    // &.fixed {
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     width: 100%;
+    //     z-index: 99;
+    // }
+
+    &.is-hidden {
+        transform: translateY(-100%);
     }
 
     .inner {
@@ -25,16 +33,15 @@
     }
 
     .logo {
-        width: auto;
-        height: rem(40);
-
-        @include media {
-            height: rem(30);
-        }
-
-        img {
-            width: auto;
-            height: 100%;
+        font-size: 1rem;
+        a {
+            font-size: rem(20);
+            color: $co-white;
+            font-weight: 400;
+            line-height: 2.1;
+            strong {
+                font-family: "Racing Sans One", sans-serif;
+            }
         }
     }
 
@@ -53,16 +60,16 @@
                     display: block;
                     font-size: rem(18);
                     font-weight: 600;
-                    color: var(--nav-color, $co-black);
+                    color: var(--nav-color, $text-color);
 
                     &:hover {
-                        --nav-color: #{$co-point};
+                        --nav-color: #{$co-white};
                     }
                 }
 
                 &.active {
                     a {
-                        --nav-color: #{$primary};
+                        --nav-color: #{$co-white};
                     }
                 }
             }
@@ -87,7 +94,7 @@
             @include before {
                 position: absolute;
                 inset: 0;
-                @include bgwhite(0.6);
+                @include bgblack(0.3);
                 backdrop-filter: blur(20px);
                 z-index: 0;
                 pointer-events: none;
@@ -130,7 +137,7 @@
         width: rem(38);
         height: rem(38);
         border-radius: 50%;
-        background-color: $primary;
+        background-color: transparent;
 
         &::before,
         &::after {
@@ -223,23 +230,61 @@
     @include bgblack(0.8);
   }
 }
-
+.wrapper {
+    position: relative;
+}
+.container {
+    position: relative;
+}
 /* section */
 .section {
-    padding: rem(100) 0;
+    // padding: rem(100) 0;
+    width: 100%;
+    min-height: 100dvh;
+    @include mediaPc {
+        position: sticky;
+        top: 0;
+    }
     .section-inner {
         @include content-inner;
-        > .h2 {
-            margin-bottom: rem(24);
+        // > .h2 {
+        //     margin-bottom: rem(24);
+        // }
+        > .flex {
+            flex-direction: column;
+            position: relative;
         }
     }
-    @include media {
-        padding: rem(60) 0;
+    // @include media {
+    //     padding: rem(60) 0;
+    // }
+    // .h2 {
+    //     font-family: 'Black Han Sans', sans-serif;
+    //     font-size: rem(40);
+    //     color: $co-black;
+    // }
+}
+.section-area {
+    width: 100%;
+    min-height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    padding: 100px 0;
+    overflow: hidden;
+    // background-color: #0FC8E0;
+    @include mediaPc {
+        border-radius: 50px 50px 0 0;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
     }
-    .h2 {
-        font-family: 'Black Han Sans', sans-serif;
-        font-size: rem(40);
-        color: $co-black;
+    .sec02 & {
+        background-color: #383838;
+    }
+    .sec03 & {
+        background-color: #151516;
+    }
+    .sec04 & {
+        background-color: #282C30;
     }
 }
 
@@ -332,7 +377,8 @@
 }
 
 html, body {
-    overflow-x: hidden;
+    //overflow-x: hidden;
+    height: 100%;
 }
 .split,
 .profile-title {
