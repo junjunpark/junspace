@@ -20,6 +20,8 @@
 <link rel="icon" type="image/png" sizes="512x512" href="../assets/images/android-chrome-512x512.png">
 <link rel="mask-icon" href="../assets/images/jlogo.svg" color="#000000">
 <link rel="stylesheet" href="../assets/css/style.css" />
+<!-- lottie -->
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
 
 </head>
 <body>
@@ -31,16 +33,14 @@
         <!-- [s] header -->
 <header id="header" class="header">
     <div class="inner">
-        <h1 id="logo" class="logo">
-            <a href="/" class="logo">
-                <img src="../assets/images/jlogo.svg" alt="JUN Portfolio">
-            </a>
+        <h1 class="logo">
+            <a href="/"><strong>Jun</strong>Portfolio</a>
         </h1>
         <nav class="nav" id="nav">
             <ul class="gnb">
-                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="#">Project</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -52,84 +52,71 @@
 <!-- // [e] header -->
 
         <main id="container" class="container">
+    <!-- [s] sec01 -->
     <section class="section sec01">
-        <div class="section-inner">
-            <div class="flex">
-                <div class="mv-area">
-                    <h3 class="h1">Designing <br>Web Structures.</h3>
-                    <p class="body1">Hi there!<br>
-                    I love crafting websites and experimenting with new ideas.<br>
-                    Take a look at my work.
+        <div class="section-area">
+            <div class="section-inner">
+                <div class="flex">
+                    <div class="main-text">
+                        <h2 class="title">
+                            <div>
+                                <span data-splitting>Designing</span>
+                            </div>
+                            Web Structures.
+                            <em>Web Publishing · UI/UX Markup</em>
+                        </h2>
+                        <div id="lottie1" aria-hidden="true">
+                            <dotlottie-wc
+                            src="https://lottie.host/ad509636-cabc-48b4-9bf6-d6ebb877535c/qxVSTPnWSv.lottie"
+                            style="width: 200px;height: 200px"
+                            autoplay
+                            loop
+                            ></dotlottie-wc>
+                        </div>
+                    </div>
+                    <div class="sub-title">
+                        안녕하세요. 웹 퍼블리셔 박혜준입니다.<br>
+                        더 나은 사용자 경험을 위해<br>
+                        새로운 아이디어를 끊임없이 탐구합니다.
+                    </div>
+                    <p class="body3">
+                        I enjoy crafting user-friendly websites<br>
+                        and continuously exploring new ideas<br>
+                        to improve the overall user experience.
                     </p>
                 </div>
             </div>
-            <!-- <div class="mv-box">
-
-            </div> -->
         </div>
     </section>
-
+    <!-- [e] sec01 -->
+    <!-- [s] sec02 -->
     <section class="section sec02">
-    <div class="section-inner">
-        <h2 class="h2">ABOUT ME</h2>
-        <div class="grid profile">
-            <div class="profile-img">
-                
-
-
-
-
-
-
-    <picture>
-        <img src="../assets/images/profile.png" alt="profile image" >
-    </picture>
-
-
-
-
-            </div>
-            <div class="profile-box">
-                <h3 class="profile-title">
-                    안녕하세요!😀<br>
-                    <em>차분함</em>과 <em>꾸준함</em>을 바탕으로<br>
-                    <em>구조를 이해하고 탐구</em>하는<br>
-                    웹 퍼블리셔 <strong>박혜준</strong>입니다.
-                </h3>
-                <div class="btn-wrap">
+        <div class="section-area">
+            <div class="section-inner">
+                <div class="flex">
+                    <h2 class="title">About me</h2>
+                    <div class="profile">
+                        <div class="img">
+                            <img src="../assets/images/profile2.png" alt="">
+                        </div>
+                        <div class="sub-text">
+                            <p>
+                            웹 퍼블리셔 박혜준입니다.<br>
+                            유연하게 사고하고 꾸준히 노력합니다.<br>
+                            차근차근 화면을 만들어가는 것을 좋아합니다.<br>
+                            더 좋은 마크업을 세심하게 고민합니다.<br>
+                            디자인과 개발에도 관심이 많습니다.<br>
+                            늘 새로운 것을 배우는 것에 도전합니다.</p>
+                            <a href="https://liberating-jasmine-2fc.notion.site/2cabc42ece0280f29ceece0aef3622a7?pvs=73" target="_blank" class="btn-link">
+                                <span>자기소개 더보기</span>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="tool-list">
                     
-
-
-  <a href="https://m.site.naver.com/1XPa9"
-     class="btn primary lg"
-     target="_blank"
-     >
-    <span>Notion 바로가기</span>
-  </a>
-
-
                     
-
-
-  <a href="https://m.site.naver.com/1Zfaw"
-     class="btn primary lg"
-     target="_blank"
-     >
-    <span>Vue 버전 바로가기</span>
-  </a>
-
-
-                </div>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="about-box split">
-                <h3 class="h3">SKILL & TOOL</h3>
-                <div class="tool-list">
-                
-                
-                    <div>
-                        
+                        <li>
+                            
 
 
 
@@ -143,10 +130,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -160,10 +147,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -177,10 +164,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -194,10 +181,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -211,10 +198,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -228,10 +215,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -245,10 +232,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -262,10 +249,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -279,10 +266,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -296,10 +283,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -313,10 +300,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -330,10 +317,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -347,10 +334,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -364,10 +351,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -381,10 +368,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -398,10 +385,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -415,10 +402,10 @@
 
 
 
-                    </div>
-                
-                    <div>
-                        
+                        </li>
+                    
+                        <li>
+                            
 
 
 
@@ -432,39 +419,28 @@
 
 
 
-                    </div>
-                
+                        </li>
+                    
 
+                    </ul>
                 </div>
             </div>
-            <div class="about-box split">
-                <h3 class="h3">Certifications</h3>
-                <ul class="list-dot">
-                    <li>컴퓨터활용능력 2급 (2024.02)</li>
-                    <li>GTQ 일러스트 1급 (2018.03)</li>
-                    <li>GTQ 1급 (2018.02)</li>
-                    <li>컴퓨터그래픽스 운용기능사 (2008.06)</li>
-                    <li>웹디자인 기능사 (2007.06)</li>
-                </ul>
-            </div>
         </div>
-    </div>
-</section>
-
-    <section class="section sec03" >
-    <div class="section-inner">
-        <h2 class="h2">WORK</h2>
-        <div class="tab">
-            <div class="tab-btns btn-wrap" role="tablist" aria-label="category tab">
-                <button class="btn sm gray tab-btn active" data-filter="*" role="tab" aria-selected="true" aria-controls="panel-all">전체</button>
-                <button class="btn sm gray tab-btn" data-filter="cate1" role="tab" aria-selected="false" aria-controls="panel-cate1">반응형</button>
-                <button class="btn sm gray tab-btn" data-filter="cate2"role="tab" aria-selected="false" aria-controls="panel-cate2">웹·모바일</button>
-            </div>
-            <div class="tab-panel" role="tabpanel" aria-labelledby="tab-all">
-                <!-- project list -->
-                <div class="card-list">
+    </section>
+    <!-- [e] sec02 -->
+    <!-- [s] sec03-->
+    <section class="section sec03">
+        <div class="section-area">
+            <div class="section-inner">
+                <div class="flex">
+                    <h2 class="title">Project</h2>
+                    <p class="bg-text" tabindex="-1" aria-hidden="true">Work</p>
+                    <div class="project-list card-list">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/B2B-2d2bc42ece02809aa07fc21b817347e0" target="_blank" data-category="cate1">
@@ -488,20 +464,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">대원제약 B2B 온라인몰 구축</h4>
+          <h4 class="text">대원제약 B2B 온라인몰 구축</h4>
           <div class="info">
-            <span class="body2">2024.11 ~ 2025.08</span>
-            <ul class="list-tag">
+            <span>2024.11 ~ 2025.08</span>
+            <ul class="dot-list">
               
-                <li>제약사</li>
+                <li>제약사 반응형 온라인몰 구축</li>
               
-                <li>Figma</li>
-              
-                <li>Gulp</li>
-              
-                <li>Git</li>
-              
-                <li>SVN</li>
+                <li>퍼블리싱 40%</li>
               
             </ul>
           </div>
@@ -511,9 +481,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece02808786cde553da368793" target="_blank" data-category="cate2">
@@ -537,22 +507,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">하나은행 기업뱅킹 운영</h4>
+          <h4 class="text">하나은행 기업뱅킹 운영</h4>
           <div class="info">
-            <span class="body2">2024.02 ~ 2024.10</span>
-            <ul class="list-tag">
+            <span>2024.02 ~ 2024.10</span>
+            <ul class="dot-list">
               
-                <li>금융권</li>
+                <li>금융권 은행 운영 서비스</li>
               
-                <li>웹접근성</li>
-              
-                <li>UI개선</li>
-              
-                <li>ICS</li>
-              
-                <li>웹뷰</li>
-              
-                <li>Zeplin</li>
+                <li>UI개편 및 웹접근성 참여</li>
               
             </ul>
           </div>
@@ -562,9 +524,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/UI-2d3bc42ece028026b5edf142e78fc73f" target="_blank" data-category="cate1">
@@ -588,18 +550,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">템플릿하우스 솔루션 UI개선</h4>
+          <h4 class="text">템플릿하우스 솔루션 UI개선</h4>
           <div class="info">
-            <span class="body2">2023.11 ~ 2023.12</span>
-            <ul class="list-tag">
+            <span>2023.11 ~ 2023.12</span>
+            <ul class="dot-list">
               
-                <li>솔루션</li>
+                <li>반응형 기반 모듈형 템플릿 UI 개발</li>
               
-                <li>UI개선</li>
-              
-                <li>Adobe XD</li>
-              
-                <li>GitLab</li>
+                <li>솔루션 커스터마이징 및 UI 마크업</li>
               
             </ul>
           </div>
@@ -609,9 +567,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/H-2d3bc42ece02805dbf68c0e916594d09?pvs=74" target="_blank" data-category="cate2">
@@ -635,18 +593,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">한섬 H쇼핑몰 브랜드관 리뉴얼 퍼블리싱</h4>
+          <h4 class="text">한섬 H쇼핑몰 브랜드관 리뉴얼</h4>
           <div class="info">
-            <span class="body2">2023.03 ~ 2023.06</span>
-            <ul class="list-tag">
+            <span>2023.03 ~ 2023.06</span>
+            <ul class="dot-list">
               
-                <li>이커머스</li>
+                <li>브랜드관 메인·서브 페이지 리뉴얼</li>
               
-                <li>Figma</li>
-              
-                <li>Gulp</li>
-              
-                <li>리뉴얼</li>
+                <li>퍼블리싱 30%</li>
               
             </ul>
           </div>
@@ -656,9 +610,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece028073b454ce6e70991553" target="_blank" data-category="cate2">
@@ -682,20 +636,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">롯데카드 퍼블리싱 운영</h4>
+          <h4 class="text">롯데카드 퍼블리싱 운영</h4>
           <div class="info">
-            <span class="body2">2021.06 ~ 2022.12</span>
-            <ul class="list-tag">
+            <span>2021.06 ~ 2022.12</span>
+            <ul class="dot-list">
               
-                <li>금융권</li>
+                <li>금융권 카드사 운영 서비스</li>
               
-                <li>UI개선</li>
-              
-                <li>웹뷰</li>
-              
-                <li>Zira</li>
-              
-                <li>가이드제작</li>
+                <li>UI개선 및 콘텐츠 업로드</li>
               
             </ul>
           </div>
@@ -705,9 +653,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/FINEO-2d3bc42ece0280388893fdebb59a6de5" target="_blank" data-category="cate1">
@@ -731,18 +679,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">FINEO 구축</h4>
+          <h4 class="text">FINEO 구축</h4>
           <div class="info">
-            <span class="body2">2021.01 ~ 2021.02</span>
-            <ul class="list-tag">
+            <span>2021.01 ~ 2021.02</span>
+            <ul class="dot-list">
               
-                <li>제조업</li>
+                <li>기업 및 제품 소개 사이트 구축</li>
               
-                <li>퍼블리싱</li>
-              
-                <li>Zeplin</li>
-              
-                <li>Javascript</li>
+                <li>퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -752,9 +696,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280c8b058c3bcbdaf9cad" target="_blank" data-category="cate1">
@@ -778,16 +722,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">클라엘 온라인몰 구축</h4>
+          <h4 class="text">클라엘 온라인몰 구축</h4>
           <div class="info">
-            <span class="body2">2020.10 ~ 2020.12</span>
-            <ul class="list-tag">
+            <span>2020.10 ~ 2020.12</span>
+            <ul class="dot-list">
               
-                <li>이커머스</li>
+                <li>온라인 쇼핑몰 구축</li>
               
-                <li>UI개발</li>
-              
-                <li>Javascript</li>
+                <li>퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -797,9 +739,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2cdbc42ece028026a987d6f367aeb2dc" target="_blank" data-category="cate1">
@@ -823,18 +765,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">이루미소프트 구축</h4>
+          <h4 class="text">이루미소프트 구축</h4>
           <div class="info">
-            <span class="body2">2020.09</span>
-            <ul class="list-tag">
+            <span>2020.09</span>
+            <ul class="dot-list">
               
-                <li>기술서비스업</li>
+                <li>기업 소개 반응형 반응형 사이트 구축</li>
               
-                <li>퍼블리싱</li>
-              
-                <li>Zeplin</li>
-              
-                <li>gnuboard</li>
+                <li>퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -844,9 +782,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2020-2d3bc42ece0280449142e63381aaf1e6" target="_blank" data-category="cate1">
@@ -870,16 +808,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">2020국민대학교 건축대학 졸업작품 전시회 구축</h4>
+          <h4 class="text">2020국민대학교 건축대학 졸업작품 전시회 구축</h4>
           <div class="info">
-            <span class="body2">2020.07</span>
-            <ul class="list-tag">
+            <span>2020.07</span>
+            <ul class="dot-list">
               
-                <li>교육서비스</li>
+                <li>온라인 졸업작품 전시회 사이트 구축</li>
               
-                <li>Adobe XD</li>
-              
-                <li>UI개발</li>
+                <li>퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -889,9 +825,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece028089bb36deef45d4cecf" target="_blank" data-category="cate1">
@@ -915,18 +851,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">빨간운동화 구축</h4>
+          <h4 class="text">빨간운동화 구축</h4>
           <div class="info">
-            <span class="body2">2020.03 ~ 2020.04</span>
-            <ul class="list-tag">
+            <span>2020.03 ~ 2020.04</span>
+            <ul class="dot-list">
               
-                <li>교육서비스</li>
+                <li>교육서비스 반응형 사이트 구축</li>
               
-                <li>디자인</li>
-              
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>디자인 100%, 퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -936,9 +868,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280569141fc5e8c2a30f9" target="_blank" data-category="cate1">
@@ -962,16 +894,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">드림셰프 구축</h4>
+          <h4 class="text">드림셰프 구축</h4>
           <div class="info">
-            <span class="body2">2020.01 ~ 2020.02</span>
-            <ul class="list-tag">
+            <span>2020.01 ~ 2020.02</span>
+            <ul class="dot-list">
               
-                <li>제조업</li>
+                <li>기업 및 제품 소개 반응형 사이트 구축</li>
               
-                <li>디자인</li>
-              
-                <li>퍼블리싱</li>
+                <li>디자인 100%, 퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -981,9 +911,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280549e42f7d3b5890c68" target="_blank" data-category="cate2">
@@ -1007,16 +937,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">카피아 구축</h4>
+          <h4 class="text">카피아 구축</h4>
           <div class="info">
-            <span class="body2">2019.12</span>
-            <ul class="list-tag">
+            <span>2019.12</span>
+            <ul class="dot-list">
               
-                <li>기술서비스업</li>
+                <li>기업 소개 사이트 구축</li>
               
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -1026,9 +954,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece02808bba85ca3da145faf6" target="_blank" data-category="cate2">
@@ -1052,18 +980,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">이성숙법률사무소 구축</h4>
+          <h4 class="text">이성숙법률사무소 구축</h4>
           <div class="info">
-            <span class="body2">2019.11</span>
-            <ul class="list-tag">
+            <span>2019.11</span>
+            <ul class="dot-list">
               
-                <li>법률사무소</li>
+                <li>법률사무소 소개 사이트 구축</li>
               
-                <li>디자인</li>
-              
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>서브 디자인 100%, 퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -1073,9 +997,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece02802289dde82602c7d4e6" target="_blank" data-category="cate1">
@@ -1099,18 +1023,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">사회평론 구축</h4>
+          <h4 class="text">사회평론 구축</h4>
           <div class="info">
-            <span class="body2">2019.07 ~ 2019.09</span>
-            <ul class="list-tag">
+            <span>2019.07 ~ 2019.09</span>
+            <ul class="dot-list">
               
-                <li>출판사</li>
+                <li>출판사 소개 반응형 사이트 구축</li>
               
-                <li>디자인</li>
-              
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>서브 디자인 100%, 퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -1120,9 +1040,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280b7aeeee8268234c976" target="_blank" data-category="cate1">
@@ -1146,18 +1066,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">한림기계 구축</h4>
+          <h4 class="text">한림기계 구축</h4>
           <div class="info">
-            <span class="body2">2019.05 ~ 2019.07</span>
-            <ul class="list-tag">
+            <span>2019.05 ~ 2019.07</span>
+            <ul class="dot-list">
               
-                <li>제조업</li>
+                <li>기업 및 제품 소개 반응형 사이트 구축</li>
               
-                <li>디자인</li>
-              
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>서브 디자인 100%, 퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -1167,9 +1083,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece02804682d4ccb289d24370" target="_blank" data-category="cate1">
@@ -1193,18 +1109,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">프로젝트 어바웃 구축</h4>
+          <h4 class="text">프로젝트 어바웃 구축</h4>
           <div class="info">
-            <span class="body2">2019.04 ~ 2019.05</span>
-            <ul class="list-tag">
+            <span>2019.04 ~ 2019.05</span>
+            <ul class="dot-list">
               
-                <li>엔터테이먼트</li>
+                <li>엔터테이먼트 소개 사이트 구축</li>
               
-                <li>디자인</li>
-              
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>서브 디자인 100%, 퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -1214,9 +1126,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/HS-2d3bc42ece0280e5ae17dfde089bc5c1" target="_blank" data-category="cate2">
@@ -1240,18 +1152,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">한서대학교 구축</h4>
+          <h4 class="text">한서대학교 HS 혁신 지원사업 구축</h4>
           <div class="info">
-            <span class="body2">2019.03 ~ 2019.04</span>
-            <ul class="list-tag">
+            <span>2019.03 ~ 2019.04</span>
+            <ul class="dot-list">
               
-                <li>교육서비스</li>
+                <li>지원사업 소개 사이트 구축</li>
               
-                <li>디자인</li>
-              
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>서브 디자인 100%, 퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -1261,9 +1169,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece02805e81f8ebad88141bc0" target="_blank" data-category="cate1">
@@ -1287,18 +1195,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">에이치엘비일렉 구축</h4>
+          <h4 class="text">에이치엘비일렉 구축</h4>
           <div class="info">
-            <span class="body2">2019.02 ~ 2019.03</span>
-            <ul class="list-tag">
+            <span>2019.02 ~ 2019.03</span>
+            <ul class="dot-list">
               
-                <li>제조업</li>
+                <li>회사 소개 반응형 사이트 구축</li>
               
-                <li>디자인</li>
-              
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>서브 디자인 100%, 퍼블리싱 80%</li>
               
             </ul>
           </div>
@@ -1308,9 +1212,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280b0b43fd36410318010" target="_blank" data-category="cate2">
@@ -1334,18 +1238,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">디자인스페이스 온라인몰 구축</h4>
+          <h4 class="text">디자인스페이스 온라인몰 구축</h4>
           <div class="info">
-            <span class="body2">2019.01</span>
-            <ul class="list-tag">
+            <span>2019.01</span>
+            <ul class="dot-list">
               
-                <li>이커머스</li>
+                <li>가구 온라인 쇼핑몰 구축</li>
               
-                <li>도소매업</li>
-              
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -1355,9 +1255,9 @@
       </a>
     
     <!-- // card -->
-
+    </div>
   
-
+    <div class="swiper-slide">
     <!-- card -->
     
       <a class="card-box is-link" href="https://liberating-jasmine-2fc.notion.site/2d3bc42ece0280eeb7fbece0d6a2cfea" target="_blank" data-category="cate1">
@@ -1381,16 +1281,14 @@
         </div>
 
         <div class="card-desc">
-          <h4 class="h3">엘로이모토 구축</h4>
+          <h4 class="text">엘로이모토 구축</h4>
           <div class="info">
-            <span class="body2">2018.12</span>
-            <ul class="list-tag">
+            <span>2018.12</span>
+            <ul class="dot-list">
               
-                <li>도소매업</li>
+                <li>제품 소개 사이트 구축</li>
               
-                <li>퍼블리싱</li>
-              
-                <li>gnuboard</li>
+                <li>퍼블리싱 100%</li>
               
             </ul>
           </div>
@@ -1400,61 +1298,54 @@
       </a>
     
     <!-- // card -->
-
-  
-</div>
-
-                <!-- // project list -->
-            </div>
-        </div>
-
     </div>
-</section>
+  
 
-
-
-
-    <section class="section sec04">
-        <div class="section-inner">
-            <h2 class="h2">CONTACT</h2>
-            <div class="flex">
-                <div class="contact-area split">
-                    <h3 class="h3">저에게 궁금한 점이 있으시다면 <br>언제든지 연락주세요!</h3>
-                    <p class="body1">메일 주시면 확인 후 회신 드리겠습니다. <br>감사합니다.</p>
-                    <div class="contact-email">
-
-                        
-
-
-  <button type="button"
-          class="btn line"
-           data-email="deerjun817@gmail.com" aria-label="이메일 주소 복사">
-    <span><i aria-hidden="true">✉</i><span aria-hidden="true">deerjun817@gmail.com</span></span>
-  </button>
-
-
-
-                        <p class="body3">↑ 클릭하시면 메일 주소가 복사됩니다.</p>
+                            </div>
+                            <div class="swiper-button-prev" aria-label="previous slide"></div>
+                            <div class="swiper-button-next" aria-label="next slide"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- [e] sec03 -->
+    <!-- [s] sec04 -->
+    <section class="section sec04">
+        <div class="section-area">
+            <div class="section-inner">
+                <div class="flex">
+                    <h3 class="title">Contact</h3>
+                    <div class="text">
+                        저에게 궁금한 점이 있으시다면<br>
+                        언제라도 편하게 연락주세요.<br>
+                        메일 주시면 확인 후 회신 드리겠습니다.<br>감사합니다.🙂
+                    </div>
+                    <div id="lottie2" aria-hidden="true">
+                        <dotlottie-wc
+                            src="https://lottie.host/8820c267-53a7-4ccc-b590-7e69a6f0f6ba/uYgdSj242k.lottie"
+                            style="width: 200px;height: 200px"
+                            autoplay
+                            loop
+                            ></dotlottie-wc>
+                    </div>
+                    <a href="mailto:deerjun817@gmail.com" class="mail">deerjun817@gmail.com</a>
+                    <a href="https://liberating-jasmine-2fc.notion.site/2cabc42ece0280f29ceece0aef3622a7?pvs=73" class="btn-link">
+                        <span>Notion 바로가기</span>
+                    </a>
+                    <h6 class="copy">Made by <strong>HYEJUN PARK</strong></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [e] sec04 -->
 </main>
 
 
 
-        <footer id="footer" class="footer">
-    <div class="inner">
-        <p class="body2">Designed & Built by HYEJUNPARK</p>
     </div>
-    <button type="button" id="gotop" class="gotoTop">
-        <span>TOP</span>
-    </button>
-</footer>
-
-    </div>
-    <div id="intro" class="intro on" tabindex="-1">
+    <!-- <div id="intro" class="intro on" tabindex="-1">
         <h1>
             <img src="../assets/images/jlogo-w.svg" alt="JUN Portfolio">
         </h1>
@@ -1469,17 +1360,25 @@
                 <path class="path" stroke="url(#grad)" fill="url(#grad)" stroke-width="2px" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
             </svg>
         </div>
-    </div>
+    </div> -->
     <!-- toast -->
     <div class="toast-container" id="toastContainer" role="status" aria-live="polite" aria-atomic="true"></div>
 
     <!-- js -->
-    <script src="../assets/js/script.js"></script>
+    <!-- <script src="../assets/js/script.js"></script> -->
+
+    <!-- swiper -->
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.0.7/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.0.7/swiper-bundle.min.js"></script>
+
+    <!-- splitting -->
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
     <!-- gsap -->
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/MorphSVGPlugin.min.js"></script>
+    <!-- <script src="https://unpkg.com/gsap@3/dist/MorphSVGPlugin.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script> -->
 
     <script src="../assets/js/animation.js"></script>
 
